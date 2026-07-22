@@ -119,7 +119,7 @@ export default function IhopDetail({ projectSlug, onSelectProject, navigateTo, g
               <img 
                 src="./images/ihop/ihop-wireframe.png" 
                 alt="IHOP Wireframes" 
-                style={{ width: '100%', maxWidth: '800px', height: 'auto', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }} 
+                style={{ width: '100%', maxWidth: '350px', height: 'auto', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }} 
               />
             </div>
           </div>
