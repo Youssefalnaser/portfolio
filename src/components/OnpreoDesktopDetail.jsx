@@ -1,8 +1,36 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/case-study.css';
 import { projectData } from '../data/projectsData';
 import MoreProjects from './MoreProjects';
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+
+const FadingCompareSlider = ({ beforeImage, afterImage, beforeLabel, afterLabel }) => {
+  const [pos, setPos] = useState(50);
+  
+  return (
+    <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px', position: 'relative' }}>
+      <div 
+        className="ba-label ba-label-before" 
+        style={{ opacity: pos > 15 ? 1 : 0, zIndex: 10, transition: 'opacity 0.3s ease' }}
+      >
+        {beforeLabel}
+      </div>
+      <div 
+        className="ba-label ba-label-after" 
+        style={{ opacity: pos < 85 ? 1 : 0, zIndex: 10, transition: 'opacity 0.3s ease' }}
+      >
+        {afterLabel}
+      </div>
+      <ReactCompareSlider
+        position={50}
+        onPositionChange={(position) => setPos(position)}
+        itemOne={<ReactCompareSliderImage src={beforeImage} alt={beforeLabel} />}
+        itemTwo={<ReactCompareSliderImage src={afterImage} alt={afterLabel} />}
+        style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
+      />
+    </div>
+  );
+};
 
 export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack }) {
   const project = projectData.find((p) => p.id === parseInt(projectId)) || projectData[1];
@@ -73,15 +101,12 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px', position: 'relative' }}>
-          <div className="ba-label ba-label-before" style={{ opacity: 1, zIndex: 10 }}>Vorher</div>
-          <div className="ba-label ba-label-after" style={{ opacity: 1, zIndex: 10 }}>Nachher</div>
-          <ReactCompareSlider
-            itemOne={<ReactCompareSliderImage src="/dashboard.png" alt="Altes Dashboard" />}
-            itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07366f20b81700e265e6_MacBook%20Pro%2016_%20-%206.png" alt="Neues Widget-System" />}
-            style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
-          />
-        </div>
+        <FadingCompareSlider 
+          beforeImage="/dashboard.png"
+          afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07366f20b81700e265e6_MacBook%20Pro%2016_%20-%206.png"
+          beforeLabel="Vorher"
+          afterLabel="Nachher"
+        />
       </section>
 
       <div className="cs-divider"></div>
@@ -98,15 +123,12 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px', position: 'relative' }}>
-          <div className="ba-label ba-label-before" style={{ opacity: 1, zIndex: 10 }}>Vorher</div>
-          <div className="ba-label ba-label-after" style={{ opacity: 1, zIndex: 10 }}>Nachher</div>
-          <ReactCompareSlider
-            itemOne={<ReactCompareSliderImage src="/property.png" alt="Alte Tabelle" />}
-            itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736ee56bf7e4bb9f41a_MacBook%20Pro%2016_%20-%2041.png" alt="Neue strukturierte Liste" />}
-            style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
-          />
-        </div>
+        <FadingCompareSlider 
+          beforeImage="/property.png"
+          afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736ee56bf7e4bb9f41a_MacBook%20Pro%2016_%20-%2041.png"
+          beforeLabel="Vorher"
+          afterLabel="Nachher"
+        />
       </section>
 
       <div className="cs-divider"></div>
@@ -129,15 +151,12 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px', position: 'relative' }}>
-          <div className="ba-label ba-label-before" style={{ opacity: 1, zIndex: 10 }}>Vorher</div>
-          <div className="ba-label ba-label-after" style={{ opacity: 1, zIndex: 10 }}>Nachher</div>
-          <ReactCompareSlider
-            itemOne={<ReactCompareSliderImage src="/lead.png" alt="Alte Lead-Ansicht" />}
-            itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736009020acd4f0e250_MacBook%20Pro%2016_%20-%2017.png" alt="Neues Layout" />}
-            style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
-          />
-        </div>
+        <FadingCompareSlider 
+          beforeImage="/lead.png"
+          afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736009020acd4f0e250_MacBook%20Pro%2016_%20-%2017.png"
+          beforeLabel="Vorher"
+          afterLabel="Nachher"
+        />
       </section>
 
       <div className="cs-divider"></div>
@@ -154,15 +173,12 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px', position: 'relative' }}>
-          <div className="ba-label ba-label-before" style={{ opacity: 1, zIndex: 10 }}>Vorher</div>
-          <div className="ba-label ba-label-after" style={{ opacity: 1, zIndex: 10 }}>Nachher</div>
-          <ReactCompareSlider
-            itemOne={<ReactCompareSliderImage src="/mailcenter.png" alt="Altes Task-Board" />}
-            itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07363224b7933b55340d_MacBook%20Pro%2016_%20-%2027.png" alt="Neues Layout" />}
-            style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
-          />
-        </div>
+        <FadingCompareSlider 
+          beforeImage="/mailcenter.png"
+          afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07363224b7933b55340d_MacBook%20Pro%2016_%20-%2027.png"
+          beforeLabel="Vorher"
+          afterLabel="Nachher"
+        />
       </section>
 
       <div className="cs-divider"></div>
