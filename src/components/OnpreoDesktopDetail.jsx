@@ -6,6 +6,15 @@ import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slide
 
 const CompareSliderWithLabels = ({ beforeImage, afterImage, beforeLabel = "Vorher", afterLabel = "Nachher" }) => {
   const [isInteracting, setIsInteracting] = useState(false);
+  const [sliderPosition, setSliderPosition] = useState(50);
+
+  const handlePositionChange = (position) => {
+    setSliderPosition(position);
+  };
+
+  // Fade out starting at 15% from the edges
+  const beforeOpacity = isInteracting ? 0 : Math.min(1, sliderPosition / 15);
+  const afterOpacity = isInteracting ? 0 : Math.min(1, (100 - sliderPosition) / 15);
 
   return (
     <div 
@@ -19,19 +28,20 @@ const CompareSliderWithLabels = ({ beforeImage, afterImage, beforeLabel = "Vorhe
     >
       <div 
         className="ba-label ba-label-before" 
-        style={{ opacity: isInteracting ? 0 : 1, zIndex: 10, transition: 'opacity 0.3s ease', pointerEvents: 'none' }}
+        style={{ opacity: beforeOpacity, zIndex: 10, transition: 'opacity 0.15s ease', pointerEvents: 'none' }}
       >
         {beforeLabel}
       </div>
       <div 
         className="ba-label ba-label-after" 
-        style={{ opacity: isInteracting ? 0 : 1, zIndex: 10, transition: 'opacity 0.3s ease', pointerEvents: 'none' }}
+        style={{ opacity: afterOpacity, zIndex: 10, transition: 'opacity 0.15s ease', pointerEvents: 'none' }}
       >
         {afterLabel}
       </div>
       <ReactCompareSlider
         itemOne={<ReactCompareSliderImage src={beforeImage} alt={beforeLabel} />}
         itemTwo={<ReactCompareSliderImage src={afterImage} alt={afterLabel} />}
+        onPositionChange={handlePositionChange}
         style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
       />
     </div>
