@@ -84,14 +84,14 @@ export default function IhopDetail({ projectSlug, onSelectProject, navigateTo, g
                 <img 
                   src="./images/ihop/ihop-persona-visual.png" 
                   alt="Persona Profile" 
-                  style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '12px', border: '1px solid #eee' }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '12px' }} 
                 />
               </div>
               <div className="project-image-wrap" style={{ margin: 0, height: '100%' }}>
                 <img 
                   src="./images/ihop/ihop-persona-text.png" 
                   alt="Persona Goals and Challenges" 
-                  style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '12px', border: '1px solid #eee' }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '12px' }} 
                 />
               </div>
             </div>
