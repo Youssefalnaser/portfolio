@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { Routes, Route, useNavigate, useLocation, useParams } from 'react-router-dom';
 import './styles/main.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -10,96 +11,92 @@ import Expertise from './components/Expertise';
 import Resume from './components/Resume';
 import Talk from './components/Talk';
 import Footer from './components/Footer';
+import { getProjectSlug } from './data/projectsData';
 
-export default function App() {
-  const [view, setView] = useState('home'); // 'home' | 'projects' | 'project-detail'
-  const [previousView, setPreviousView] = useState('home');
-  const [selectedProjectId, setSelectedProjectId] = useState(null);
-  const [scrollTarget, setScrollTarget] = useState(null);
-
-  // Handle scrolling to section when returning to Home view
-  useEffect(() => {
-    if (view === 'home' && scrollTarget) {
-      const timeoutId = setTimeout(() => {
-        const element = document.getElementById(scrollTarget);
-        if (element) {
-          const headerOffset = 90;
-          const elementPosition = element.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
-        }
-        setScrollTarget(null);
-      }, 50);
-
-      return () => clearTimeout(timeoutId);
-    }
-  }, [view, scrollTarget]);
-
-  // Handle browser back button (popstate)
-  useEffect(() => {
-    const handlePopState = (event) => {
-      if (event.state) {
-        setView(event.state.view || 'home');
-        setSelectedProjectId(event.state.projectId || null);
-      } else {
-        // Fallback if no state
-        setView('home');
-        setSelectedProjectId(null);
-      }
-    };
-
-    window.addEventListener('popstate', handlePopState);
-    
-    // Initial state push if we load the page fresh
-    if (!window.history.state) {
-      window.history.replaceState({ view: 'home', projectId: null }, "", "/");
-    }
-
-    return () => window.removeEventListener('popstate', handlePopState);
-  }, []);
+function ProjectDetailWrapper() {
+  const { slug } = useParams();
+  const navigate = useNavigate();
+  
+  const handleSelectProject = (id) => {
+    const nextSlug = getProjectSlug(id);
+    navigate(`/project/${nextSlug}`);
+  };
 
   const navigateTo = (targetView, targetSection = null) => {
-    if (targetView !== view) {
-      setPreviousView(view);
-    }
     if (targetView === 'home') {
-      setView('home');
-      setSelectedProjectId(null);
-      window.history.pushState({ view: 'home', projectId: null }, "", "/");
+      navigate('/');
       if (targetSection) {
-        setScrollTarget(targetSection);
+        setTimeout(() => {
+          const element = document.getElementById(targetSection);
+          if (element) {
+            const headerOffset = 90;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+          }
+        }, 100);
+      }
+    } else if (targetView === 'projects') {
+      navigate('/projects');
+    }
+  };
+
+  const goBack = () => {
+    navigate(-1);
+  };
+
+  return (
+    <ProjectDetail 
+      projectSlug={slug} 
+      onSelectProject={handleSelectProject}
+      navigateTo={navigateTo}
+      goBack={goBack}
+    />
+  );
+}
+
+export default function App() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Scroll to top on route change (except when scrolling to a specific section on home)
+  useEffect(() => {
+    if (location.pathname !== '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [location.pathname]);
+
+  const navigateTo = (targetView, targetSection = null) => {
+    if (targetView === 'home') {
+      navigate('/');
+      if (targetSection) {
+        setTimeout(() => {
+          const element = document.getElementById(targetSection);
+          if (element) {
+            const headerOffset = 90;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+          }
+        }, 100);
       } else {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     } else if (targetView === 'projects') {
-      setView('projects');
-      setSelectedProjectId(null);
-      window.history.pushState({ view: 'projects', projectId: null }, "", "/projects");
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      navigate('/projects');
     }
   };
 
   const handleSelectProject = (id) => {
-    setPreviousView(view);
-    setSelectedProjectId(id);
-    setView('project-detail');
-    
-    // Update URL dynamically based on project ID
-    const projectSlug = `project-${id}`;
-    window.history.pushState({ view: 'project-detail', projectId: id }, "", `/projects/${projectSlug}`);
-    
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const slug = getProjectSlug(id);
+    navigate(`/project/${slug}`);
   };
 
-  const goBack = () => {
-    setView(previousView);
-    setSelectedProjectId(null);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  // Determine current view for Navbar active state
+  const currentView = location.pathname === '/' ? 'home' 
+                    : location.pathname === '/projects' ? 'projects' 
+                    : location.pathname.startsWith('/project/') ? 'project-detail' 
+                    : 'home';
 
   return (
     <div className="page-wrapper">
@@ -112,34 +109,28 @@ export default function App() {
       </div>
 
       {/* Shared Header Navigation */}
-      <Navbar navigateTo={navigateTo} currentView={view} />
+      <Navbar navigateTo={navigateTo} currentView={currentView} />
 
-      {/* Conditionally render views */}
-      {view === 'home' && (
-        <>
-          <Hero />
-          <About />
-          <Projects 
-            onExploreAll={() => navigateTo('projects')} 
-            onSelectProject={handleSelectProject} 
-          />
-          <Expertise />
-          <Resume />
-        </>
-      )}
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Hero />
+            <About />
+            <Projects 
+              onExploreAll={() => navigateTo('projects')} 
+              onSelectProject={handleSelectProject} 
+            />
+            <Expertise />
+            <Resume />
+          </>
+        } />
 
-      {view === 'projects' && (
-        <AllProjects onSelectProject={handleSelectProject} />
-      )}
+        <Route path="/projects" element={
+          <AllProjects onSelectProject={handleSelectProject} />
+        } />
 
-      {view === 'project-detail' && (
-        <ProjectDetail 
-          projectId={selectedProjectId} 
-          onSelectProject={handleSelectProject}
-          navigateTo={navigateTo}
-          goBack={goBack}
-        />
-      )}
+        <Route path="/project/:slug" element={<ProjectDetailWrapper />} />
+      </Routes>
 
       {/* Shared Footer sections */}
       <Talk />

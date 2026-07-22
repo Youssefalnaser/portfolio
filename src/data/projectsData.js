@@ -194,3 +194,16 @@ export const projectData = [
     ]
   }
 ];
+
+export const getProjectSlug = (id) => {
+  const p = projectData.find((p) => p.id === parseInt(id));
+  if (!p) return id;
+  return p.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+};
+
+export const getProjectBySlug = (slug) => {
+  return projectData.find((p) => {
+    const pSlug = p.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+    return pSlug === slug || p.id.toString() === slug;
+  });
+};

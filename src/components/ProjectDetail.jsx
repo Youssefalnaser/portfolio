@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { projectData } from '../data/projectsData';
+import { getProjectBySlug, projectData } from '../data/projectsData';
 import '../styles/components.css';
 import OnpreoAppDetail from './OnpreoAppDetail';
 import SookAppDetail from './SookAppDetail';
@@ -7,9 +7,10 @@ import OnpreoDesktopDetail from './OnpreoDesktopDetail';
 import SmoothDetail from './SmoothDetail';
 import MoreProjects from './MoreProjects';
 
-export default function ProjectDetail({ projectId, onSelectProject, navigateTo, goBack }) {
-  // Find current project by id
-  const project = projectData.find((p) => p.id === parseInt(projectId)) || projectData[0];
+export default function ProjectDetail({ projectSlug, onSelectProject, navigateTo, goBack }) {
+  // Find current project by slug (or fallback to ID if passed)
+  const project = getProjectBySlug(projectSlug) || projectData[0];
+  const projectId = project.id;
 
   // Route specific highly-custom layouts
   if (project.id === 2) {
