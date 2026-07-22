@@ -1,36 +1,42 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/case-study.css';
 import { projectData } from '../data/projectsData';
 import MoreProjects from './MoreProjects';
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 
-// Custom highly professional handle
-const CustomHandle = () => (
-  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
-    <div style={{ width: '3px', height: '100%', backgroundColor: '#fff', boxShadow: '0 0 8px rgba(0,0,0,0.4)' }} />
-    <div style={{
-      position: 'absolute',
-      width: '44px',
-      height: '44px',
-      backgroundColor: '#fff',
-      borderRadius: '50%',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      boxShadow: '0 4px 16px rgba(0,0,0,0.3)',
-      cursor: 'ew-resize',
-      transition: 'transform 0.2s ease',
-    }}
-    onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-    onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+const CompareSliderWithLabels = ({ beforeImage, afterImage, beforeLabel = "Vorher", afterLabel = "Nachher" }) => {
+  const [isInteracting, setIsInteracting] = useState(false);
+
+  return (
+    <div 
+      className="cs-img-bg" 
+      style={{ padding: '0', overflow: 'hidden', borderRadius: '12px', position: 'relative' }}
+      onPointerDown={() => setIsInteracting(true)}
+      onPointerUp={() => setIsInteracting(false)}
+      onPointerLeave={() => setIsInteracting(false)}
+      onTouchStart={() => setIsInteracting(true)}
+      onTouchEnd={() => setIsInteracting(false)}
     >
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M15 18l6-6-6-6" />
-        <path d="M9 18l-6-6 6-6" />
-      </svg>
+      <div 
+        className="ba-label ba-label-before" 
+        style={{ opacity: isInteracting ? 0 : 1, zIndex: 10, transition: 'opacity 0.3s ease', pointerEvents: 'none' }}
+      >
+        {beforeLabel}
+      </div>
+      <div 
+        className="ba-label ba-label-after" 
+        style={{ opacity: isInteracting ? 0 : 1, zIndex: 10, transition: 'opacity 0.3s ease', pointerEvents: 'none' }}
+      >
+        {afterLabel}
+      </div>
+      <ReactCompareSlider
+        itemOne={<ReactCompareSliderImage src={beforeImage} alt={beforeLabel} />}
+        itemTwo={<ReactCompareSliderImage src={afterImage} alt={afterLabel} />}
+        style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
+      />
     </div>
-  </div>
-);
+  );
+};
 
 export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack }) {
   const project = projectData.find((p) => p.id === parseInt(projectId)) || projectData[1];
@@ -101,16 +107,10 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px', position: 'relative' }}>
-          <div className="ba-label ba-label-before" style={{ opacity: 1, zIndex: 10 }}>Vorher</div>
-          <div className="ba-label ba-label-after" style={{ opacity: 1, zIndex: 10 }}>Nachher</div>
-          <ReactCompareSlider
-            handle={<CustomHandle />}
-            itemOne={<ReactCompareSliderImage src="/dashboard.png" alt="Altes Dashboard" />}
-            itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07366f20b81700e265e6_MacBook%20Pro%2016_%20-%206.png" alt="Neues Widget-System" />}
-            style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
-          />
-        </div>
+        <CompareSliderWithLabels 
+          beforeImage="/dashboard.png" 
+          afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07366f20b81700e265e6_MacBook%20Pro%2016_%20-%206.png" 
+        />
       </section>
 
       <div className="cs-divider"></div>
@@ -127,16 +127,10 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px', position: 'relative' }}>
-          <div className="ba-label ba-label-before" style={{ opacity: 1, zIndex: 10 }}>Vorher</div>
-          <div className="ba-label ba-label-after" style={{ opacity: 1, zIndex: 10 }}>Nachher</div>
-          <ReactCompareSlider
-            handle={<CustomHandle />}
-            itemOne={<ReactCompareSliderImage src="/property.png" alt="Alte Tabelle" />}
-            itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736ee56bf7e4bb9f41a_MacBook%20Pro%2016_%20-%2041.png" alt="Neue strukturierte Liste" />}
-            style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
-          />
-        </div>
+        <CompareSliderWithLabels 
+          beforeImage="/property.png" 
+          afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736ee56bf7e4bb9f41a_MacBook%20Pro%2016_%20-%2041.png" 
+        />
       </section>
 
       <div className="cs-divider"></div>
@@ -159,16 +153,10 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px', position: 'relative' }}>
-          <div className="ba-label ba-label-before" style={{ opacity: 1, zIndex: 10 }}>Vorher</div>
-          <div className="ba-label ba-label-after" style={{ opacity: 1, zIndex: 10 }}>Nachher</div>
-          <ReactCompareSlider
-            handle={<CustomHandle />}
-            itemOne={<ReactCompareSliderImage src="/lead.png" alt="Alte Lead-Ansicht" />}
-            itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736009020acd4f0e250_MacBook%20Pro%2016_%20-%2017.png" alt="Neues Layout" />}
-            style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
-          />
-        </div>
+        <CompareSliderWithLabels 
+          beforeImage="/lead.png" 
+          afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736009020acd4f0e250_MacBook%20Pro%2016_%20-%2017.png" 
+        />
       </section>
 
       <div className="cs-divider"></div>
@@ -185,16 +173,10 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px', position: 'relative' }}>
-          <div className="ba-label ba-label-before" style={{ opacity: 1, zIndex: 10 }}>Vorher</div>
-          <div className="ba-label ba-label-after" style={{ opacity: 1, zIndex: 10 }}>Nachher</div>
-          <ReactCompareSlider
-            handle={<CustomHandle />}
-            itemOne={<ReactCompareSliderImage src="/mailcenter.png" alt="Altes Task-Board" />}
-            itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07363224b7933b55340d_MacBook%20Pro%2016_%20-%2027.png" alt="Neues Layout" />}
-            style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
-          />
-        </div>
+        <CompareSliderWithLabels 
+          beforeImage="/mailcenter.png" 
+          afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07363224b7933b55340d_MacBook%20Pro%2016_%20-%2027.png" 
+        />
       </section>
 
       <div className="cs-divider"></div>
