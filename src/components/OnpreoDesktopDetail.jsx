@@ -51,7 +51,7 @@ const comparisonsData = [
       title: "Die Lösung",
       text: "Eine klare visuelle Hierarchie. Die Einführung eines modularen Widget-Systems erlaubt es den Maklern, die wichtigsten Metriken sofort zu erfassen, ohne scrollen zu müssen. Die Navigation wurde vereinfacht und strukturiert."
     },
-    beforeImage: "/images/onpreo-desktop/before/dashboard-before.png",
+    beforeImage: "./images/onpreo-desktop/before/dashboard-before.png",
     afterImage: "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07366f20b81700e265e6_MacBook%20Pro%2016_%20-%206.png"
   },
   {
@@ -62,7 +62,7 @@ const comparisonsData = [
       title: "Klarheit statt Chaos",
       text: "Die Listenansicht der Immobilien war vorher eine endlose, unstrukturierte Tabelle (links). Durch die Neugestaltung (rechts) wurden visuelle Trenner hinzugefügt, wichtige Status-Informationen hervorgehoben und Filter leichter zugänglich gemacht."
     },
-    beforeImage: "/images/onpreo-desktop/before/property-before.png",
+    beforeImage: "./images/onpreo-desktop/before/property-before.png",
     afterImage: "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736ee56bf7e4bb9f41a_MacBook%20Pro%2016_%20-%2041.png"
   },
   {
@@ -77,7 +77,7 @@ const comparisonsData = [
       title: "Die Lösung",
       text: "Ein Kanban-ähnliches Board und erweiterte Detailansichten ermöglichen es nun, den Status jedes Leads sofort zu erkennen und Aktionen mit einem Klick auszuführen."
     },
-    beforeImage: "/images/onpreo-desktop/before/lead-before.png",
+    beforeImage: "./images/onpreo-desktop/before/lead-before.png",
     afterImage: "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736009020acd4f0e250_MacBook%20Pro%2016_%20-%2017.png"
   },
   {
@@ -88,7 +88,7 @@ const comparisonsData = [
       title: "Fokus auf das Wichtigste",
       text: "Aufgaben wurden visuell komplett überarbeitet. Fälligkeitsdaten und Prioritäten sind durch intelligente Badges und Typografie-Regeln nun sofort ersichtlich, was die Tagesplanung der Makler massiv unterstützt."
     },
-    beforeImage: "/images/onpreo-desktop/before/mailcenter-before.png",
+    beforeImage: "./images/onpreo-desktop/before/mailcenter-before.png",
     afterImage: "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07363224b7933b55340d_MacBook%20Pro%2016_%20-%2027.png"
   }
 ];
