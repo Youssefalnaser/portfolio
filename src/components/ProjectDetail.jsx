@@ -5,6 +5,7 @@ import OnpreoAppDetail from './OnpreoAppDetail';
 import SookAppDetail from './SookAppDetail';
 import OnpreoDesktopDetail from './OnpreoDesktopDetail';
 import SmoothDetail from './SmoothDetail';
+import IhopDetail from './IhopDetail';
 import MoreProjects from './MoreProjects';
 
 export default function ProjectDetail({ projectSlug, onSelectProject, navigateTo, goBack }) {
@@ -21,6 +22,9 @@ export default function ProjectDetail({ projectSlug, onSelectProject, navigateTo
   }
   if (project.id === 4) {
     return <SookAppDetail projectId={projectId} onSelectProject={onSelectProject} navigateTo={navigateTo} goBack={goBack} />;
+  }
+  if (project.id === 11) {
+    return <IhopDetail projectSlug={projectSlug} onSelectProject={onSelectProject} navigateTo={navigateTo} goBack={goBack} />;
   }
   if (project.id === 12) {
     return <SmoothDetail projectId={projectId} onSelectProject={onSelectProject} navigateTo={navigateTo} goBack={goBack} />;
