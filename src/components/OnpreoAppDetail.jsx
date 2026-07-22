@@ -72,7 +72,7 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
           </div>
         </div>
         <div className="cs-img-bg" style={{ padding: 0, background: 'transparent', marginTop: '40px' }}>
-          <img src="./images/onpreo-app/testing-insights.png" alt="Onpreo App Challenge Mockup" style={{ width: '100%', height: 'auto', borderRadius: '16px', display: 'block' }} />
+          <img src="/images/onpreo-app/testing-insights.png" alt="Onpreo App Challenge Mockup" style={{ width: '100%', height: 'auto', borderRadius: '16px', display: 'block' }} />
         </div>
       </section>
 
@@ -86,16 +86,16 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
             </div>
           </div>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent', borderRadius: '24px', overflow: 'hidden', width: '100%' }}>
-            <img src="./images/onpreo-app/problem-statement.png" alt="Problem Statement" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block', objectFit: 'cover' }} />
+            <img src="/images/onpreo-app/problem-statement.png" alt="Problem Statement" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block', objectFit: 'cover' }} />
           </div>
         </div>
         
         <div className="grid-cs _1-1" style={{ marginTop: '40px', gap: '30px' }}>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent', borderRadius: '24px', overflow: 'hidden' }}>
-            <img src="./images/onpreo-app/empathy-map.png" alt="Empathy Map" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
+            <img src="/images/onpreo-app/empathy-map.png" alt="Empathy Map" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
           </div>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent', borderRadius: '24px', overflow: 'hidden' }}>
-            <img src="./images/onpreo-app/user-persona.png" alt="User Persona" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
+            <img src="/images/onpreo-app/user-persona.png" alt="User Persona" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
           </div>
         </div>
       </section>
@@ -110,7 +110,7 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
             </div>
           </div>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent' }}>
-            <img src="./images/onpreo-app/wireframes.png" alt="Onpreo App Wireframes" style={{ width: '100%', height: 'auto', borderRadius: '12px', display: 'block' }} />
+            <img src="/images/onpreo-app/wireframes.png" alt="Onpreo App Wireframes" style={{ width: '100%', height: 'auto', borderRadius: '12px', display: 'block' }} />
           </div>
         </div>
       </section>
@@ -125,7 +125,7 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
             </div>
           </div>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent' }}>
-             <img src="./images/onpreo-app/problem-mockup.png" alt="Testing Insights Mockup" style={{ width: '100%', height: 'auto', borderRadius: '12px', display: 'block' }} />
+             <img src="/images/onpreo-app/problem-mockup.png" alt="Testing Insights Mockup" style={{ width: '100%', height: 'auto', borderRadius: '12px', display: 'block' }} />
           </div>
         </div>
 
@@ -177,13 +177,13 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
 
         <div className="grid-cs grid-3x2" style={{ marginTop: '40px', gap: '20px' }}>
           <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}>
-            <img src="./images/onpreo-app/components-list-push.png" alt="List Item, Push Notification & Illustrationen" style={{ width: '100%', height: 'auto', borderRadius: '12px', display: 'block' }} />
+            <img src="/images/onpreo-app/components-list-push.png" alt="List Item, Push Notification & Illustrationen" style={{ width: '100%', height: 'auto', borderRadius: '12px', display: 'block' }} />
           </div>
           <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}>
-            <img src="./images/onpreo-app/components-buttons.png" alt="Button & Swipe cards Button" style={{ width: '100%', height: 'auto', borderRadius: '12px', display: 'block' }} />
+            <img src="/images/onpreo-app/components-buttons.png" alt="Button & Swipe cards Button" style={{ width: '100%', height: 'auto', borderRadius: '12px', display: 'block' }} />
           </div>
           <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}>
-            <img src="./images/onpreo-app/components-card-modal.png" alt="Card and Modal" style={{ width: '100%', height: 'auto', borderRadius: '12px', display: 'block' }} />
+            <img src="/images/onpreo-app/components-card-modal.png" alt="Card and Modal" style={{ width: '100%', height: 'auto', borderRadius: '12px', display: 'block' }} />
           </div>
         </div>
       </section>
@@ -218,25 +218,25 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
         </div>
         <div className="grid-cs grid-5x1" style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '20px' }}>
           {/* Row 1: Screens 1 to 5 */}
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/onpreo-app/screens/screen-1.png" alt="Screen 1 - Splash Logo" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/onpreo-app/screens/screen-2.png" alt="Screen 2 - Akquise Welcome" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/onpreo-app/screens/screen-3.png" alt="Screen 3 - Pricing Plan" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/onpreo-app/screens/screen-4.png" alt="Screen 4 - Password Reset" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/onpreo-app/screens/screen-5.png" alt="Screen 5 - Dashboard Home" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/onpreo-app/screens/screen-1.png" alt="Screen 1 - Splash Logo" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/onpreo-app/screens/screen-2.png" alt="Screen 2 - Akquise Welcome" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/onpreo-app/screens/screen-3.png" alt="Screen 3 - Pricing Plan" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/onpreo-app/screens/screen-4.png" alt="Screen 4 - Password Reset" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/onpreo-app/screens/screen-5.png" alt="Screen 5 - Dashboard Home" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
 
           {/* Row 2: Screens 6 to 10 */}
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/onpreo-app/screens/screen-6.png" alt="Screen 6 - Task Offen Details" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/onpreo-app/screens/screen-7.png" alt="Screen 7 - Call Modal" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/onpreo-app/screens/screen-8.png" alt="Screen 8 - Call Action" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/onpreo-app/screens/screen-9.png" alt="Screen 9 - Voice Recording Transkription" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/onpreo-app/screens/screen-10.png" alt="Screen 10 - Inbox Notifications" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/onpreo-app/screens/screen-6.png" alt="Screen 6 - Task Offen Details" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/onpreo-app/screens/screen-7.png" alt="Screen 7 - Call Modal" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/onpreo-app/screens/screen-8.png" alt="Screen 8 - Call Action" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/onpreo-app/screens/screen-9.png" alt="Screen 9 - Voice Recording Transkription" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/onpreo-app/screens/screen-10.png" alt="Screen 10 - Inbox Notifications" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
 
           {/* Row 3: Screens 11 to 15 */}
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/onpreo-app/screens/screen-11.png" alt="Screen 11 - Kontakt details" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/onpreo-app/screens/screen-12.png" alt="Screen 12 - Alle Notizen" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/onpreo-app/screens/screen-13.png" alt="Screen 13 - Aufgabe zuweisen" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/onpreo-app/screens/screen-14.png" alt="Screen 14 - Immobilien Daten" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/onpreo-app/screens/screen-15.png" alt="Screen 15 - Deals Besichtigung" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/onpreo-app/screens/screen-11.png" alt="Screen 11 - Kontakt details" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/onpreo-app/screens/screen-12.png" alt="Screen 12 - Alle Notizen" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/onpreo-app/screens/screen-13.png" alt="Screen 13 - Aufgabe zuweisen" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/onpreo-app/screens/screen-14.png" alt="Screen 14 - Immobilien Daten" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/onpreo-app/screens/screen-15.png" alt="Screen 15 - Deals Besichtigung" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
         </div>
       </section>
 

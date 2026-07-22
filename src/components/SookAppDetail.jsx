@@ -72,7 +72,7 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
           </div>
         </div>
         <div className="cs-img-bg" style={{ padding: 0, background: 'transparent', marginTop: '40px', borderRadius: '24px', overflow: 'hidden' }}>
-          <img src="./images/sook-app/testing-insights.png" alt="SOOK App Challenge Mockup" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block', objectFit: 'cover' }} />
+          <img src="/images/sook-app/testing-insights.png" alt="SOOK App Challenge Mockup" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block', objectFit: 'cover' }} />
         </div>
       </section>
 
@@ -86,16 +86,16 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
             </div>
           </div>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent', borderRadius: '24px', overflow: 'hidden', width: '100%' }}>
-            <img src="./images/sook-app/problem-statement.png" alt="Problem Statement" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block', objectFit: 'cover' }} />
+            <img src="/images/sook-app/problem-statement.png" alt="Problem Statement" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block', objectFit: 'cover' }} />
           </div>
         </div>
         
         <div className="grid-cs _1-1" style={{ marginTop: '40px', gap: '30px' }}>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent', borderRadius: '24px', overflow: 'hidden' }}>
-            <img src="./images/sook-app/empathy-map.png" alt="Empathy Map" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
+            <img src="/images/sook-app/empathy-map.png" alt="Empathy Map" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
           </div>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent', borderRadius: '24px', overflow: 'hidden' }}>
-            <img src="./images/sook-app/user-persona.png" alt="User Persona" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
+            <img src="/images/sook-app/user-persona.png" alt="User Persona" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
           </div>
         </div>
       </section>
@@ -110,7 +110,7 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
             </div>
           </div>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent', borderRadius: '24px', overflow: 'hidden' }}>
-            <img src="./images/sook-app/wireframes.png" alt="SOOK App Wireframes" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
+            <img src="/images/sook-app/wireframes.png" alt="SOOK App Wireframes" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
           </div>
         </div>
       </section>
@@ -125,7 +125,7 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
             </div>
           </div>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent', borderRadius: '24px', overflow: 'hidden' }}>
-             <img src="./images/sook-app/problem-mockup.png" alt="Testing Insights" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
+             <img src="/images/sook-app/problem-mockup.png" alt="Testing Insights" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
           </div>
         </div>
 
@@ -177,13 +177,13 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
 
         <div className="grid-cs grid-3x2" style={{ marginTop: '40px', gap: '20px' }}>
           <div className="cs-img-bg" style={{ padding: 0, background: 'transparent', borderRadius: '24px', overflow: 'hidden' }}>
-            <img src="./images/sook-app/design-system-colors.png" alt="SOOK Design System - Farben" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
+            <img src="/images/sook-app/design-system-colors.png" alt="SOOK Design System - Farben" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
           </div>
           <div className="cs-img-bg" style={{ padding: 0, background: 'transparent', borderRadius: '24px', overflow: 'hidden' }}>
-            <img src="./images/sook-app/design-system-buttons.png" alt="SOOK Design System - Buttons" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
+            <img src="/images/sook-app/design-system-buttons.png" alt="SOOK Design System - Buttons" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
           </div>
           <div className="cs-img-bg" style={{ padding: 0, background: 'transparent', borderRadius: '24px', overflow: 'hidden' }}>
-            <img src="./images/sook-app/design-system-cards.png" alt="SOOK Design System - Cards & Navbar" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
+            <img src="/images/sook-app/design-system-cards.png" alt="SOOK Design System - Cards & Navbar" style={{ width: '100%', height: 'auto', borderRadius: '24px', display: 'block' }} />
           </div>
         </div>
       </section>
@@ -218,22 +218,22 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
         </div>
         <div className="grid-cs" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px' }}>
           {/* Row 1: Screens 1 to 4 (Onboarding & Auth) */}
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/sook-app/screens/screen-1.jpg" alt="Screen 1 - Onboarding Categories" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/sook-app/screens/screen-2.jpg" alt="Screen 2 - Onboarding Discounts" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/sook-app/screens/screen-3.jpg" alt="Screen 3 - Onboarding 30 Min Delivery" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/sook-app/screens/screen-4.jpg" alt="Screen 4 - Store Login" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/sook-app/screens/screen-1.jpg" alt="Screen 1 - Onboarding Categories" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/sook-app/screens/screen-2.jpg" alt="Screen 2 - Onboarding Discounts" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/sook-app/screens/screen-3.jpg" alt="Screen 3 - Onboarding 30 Min Delivery" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/sook-app/screens/screen-4.jpg" alt="Screen 4 - Store Login" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
 
           {/* Row 2: Screens 5 to 8 (Home & Discovery) */}
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/sook-app/screens/screen-5.jpg" alt="Screen 5 - Home Feed & Offers" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/sook-app/screens/screen-6.jpg" alt="Screen 6 - Categories List" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/sook-app/screens/screen-7.jpg" alt="Screen 7 - Search & Popular Tags" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/sook-app/screens/screen-8.jpg" alt="Screen 8 - Fleisch Product Grid" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/sook-app/screens/screen-5.jpg" alt="Screen 5 - Home Feed & Offers" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/sook-app/screens/screen-6.jpg" alt="Screen 6 - Categories List" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/sook-app/screens/screen-7.jpg" alt="Screen 7 - Search & Popular Tags" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/sook-app/screens/screen-8.jpg" alt="Screen 8 - Fleisch Product Grid" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
 
           {/* Row 3: Screens 9 to 12 (Cart, Checkout & Tracking) */}
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/sook-app/screens/screen-9.jpg" alt="Screen 9 - Süßigkeiten Category" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/sook-app/screens/screen-10.jpg" alt="Screen 10 - Warenkorb" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/sook-app/screens/screen-11.jpg" alt="Screen 11 - Zahlungserfolg" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
-          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="./images/sook-app/screens/screen-12.png" alt="Screen 12 - Live Delivery Tracking" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/sook-app/screens/screen-9.jpg" alt="Screen 9 - Süßigkeiten Category" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/sook-app/screens/screen-10.jpg" alt="Screen 10 - Warenkorb" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/sook-app/screens/screen-11.jpg" alt="Screen 11 - Zahlungserfolg" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
+          <div className="cs-img-bg" style={{ padding: 0, background: 'transparent' }}><img src="/images/sook-app/screens/screen-12.png" alt="Screen 12 - Live Delivery Tracking" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }} /></div>
         </div>
       </section>
 

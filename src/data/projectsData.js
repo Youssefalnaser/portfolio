@@ -151,7 +151,7 @@ export const projectData = [
     category: "Motion Design · After Effects · Storytelling",
     client: "Ostfalia Hochschule · Personal Project",
     date: "Summer 2025",
-    image: "./images/sook-video-thumb.png",
+    image: "/images/sook-video-thumb.png",
     videoUrl: "https://www.youtube.com/embed/79uQACTnqhY",
     subtitle: "A motion design project combining storytelling, typography animation, and 3D mockups to bring an app to life, emotionally and visually",
     overview: "How do you make someone feel the need for an app they've never heard of — in under 60 seconds?",
