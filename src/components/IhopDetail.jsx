@@ -144,10 +144,10 @@ export default function IhopDetail({ projectSlug, onSelectProject, navigateTo, g
 
             <div className="grid-cs grid-3x2">
               <div className="project-image-wrap" style={{ margin: 0 }}>
-                <img src="./images/ihop/ihop-ui-katalog.png" alt="IHOP UI Katalog" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }} />
+                <img src="./images/ihop/ihop-ui-produkte.png" alt="IHOP UI Home" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }} />
               </div>
               <div className="project-image-wrap" style={{ margin: 0 }}>
-                <img src="./images/ihop/ihop-ui-produkte.png" alt="IHOP UI Produkte" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }} />
+                <img src="./images/ihop/ihop-ui-katalog.png" alt="IHOP UI Katalog" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }} />
               </div>
               <div className="project-image-wrap" style={{ margin: 0 }}>
                 <img src="./images/ihop/ihop-ui-about.png" alt="IHOP UI About" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }} />
