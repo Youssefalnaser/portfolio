@@ -6,15 +6,6 @@ import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slide
 
 const CompareSliderWithLabels = ({ beforeImage, afterImage, beforeLabel = "Vorher", afterLabel = "Nachher" }) => {
   const [isInteracting, setIsInteracting] = useState(false);
-  const [sliderPosition, setSliderPosition] = useState(50);
-
-  const handlePositionChange = (position) => {
-    setSliderPosition(position);
-  };
-
-  // Fade out starting at 15% from the edges
-  const beforeOpacity = isInteracting ? 0 : Math.min(1, sliderPosition / 15);
-  const afterOpacity = isInteracting ? 0 : Math.min(1, (100 - sliderPosition) / 15);
 
   return (
     <div 
@@ -28,25 +19,79 @@ const CompareSliderWithLabels = ({ beforeImage, afterImage, beforeLabel = "Vorhe
     >
       <div 
         className="ba-label ba-label-before" 
-        style={{ opacity: beforeOpacity, zIndex: 10, transition: 'opacity 0.15s ease', pointerEvents: 'none' }}
+        style={{ opacity: isInteracting ? 0 : 1, zIndex: 10, transition: 'opacity 0.3s ease', pointerEvents: 'none' }}
       >
         {beforeLabel}
       </div>
       <div 
         className="ba-label ba-label-after" 
-        style={{ opacity: afterOpacity, zIndex: 10, transition: 'opacity 0.15s ease', pointerEvents: 'none' }}
+        style={{ opacity: isInteracting ? 0 : 1, zIndex: 10, transition: 'opacity 0.3s ease', pointerEvents: 'none' }}
       >
         {afterLabel}
       </div>
       <ReactCompareSlider
         itemOne={<ReactCompareSliderImage src={beforeImage} alt={beforeLabel} />}
         itemTwo={<ReactCompareSliderImage src={afterImage} alt={afterLabel} />}
-        onPositionChange={handlePositionChange}
         style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
       />
     </div>
   );
 };
+
+const comparisonsData = [
+  {
+    id: "dashboard",
+    title: "Dashboard & Übersicht",
+    gridClass: "_0-5-1",
+    contentLeft: {
+      title: "Das Problem",
+      text: "Das alte Dashboard war mit Datenpunkten und Tabellen überfrachtet. Wichtige KPIs gingen in der Informationsflut unter, und die Navigation war komplex und wenig intuitiv."
+    },
+    contentRight: {
+      title: "Die Lösung",
+      text: "Eine klare visuelle Hierarchie. Die Einführung eines modularen Widget-Systems erlaubt es den Maklern, die wichtigsten Metriken sofort zu erfassen, ohne scrollen zu müssen. Die Navigation wurde vereinfacht und strukturiert."
+    },
+    beforeImage: "/images/onpreo-desktop/before/dashboard-before.png",
+    afterImage: "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07366f20b81700e265e6_MacBook%20Pro%2016_%20-%206.png"
+  },
+  {
+    id: "properties",
+    title: "Immobilien-Ansicht",
+    gridClass: "_1-0-5",
+    contentLeft: {
+      title: "Klarheit statt Chaos",
+      text: "Die Listenansicht der Immobilien war vorher eine endlose, unstrukturierte Tabelle (links). Durch die Neugestaltung (rechts) wurden visuelle Trenner hinzugefügt, wichtige Status-Informationen hervorgehoben und Filter leichter zugänglich gemacht."
+    },
+    beforeImage: "/images/onpreo-desktop/before/property-before.png",
+    afterImage: "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736ee56bf7e4bb9f41a_MacBook%20Pro%2016_%20-%2041.png"
+  },
+  {
+    id: "leads",
+    title: "Lead-Verwaltung",
+    gridClass: "_0-5-1",
+    contentLeft: {
+      title: "Das Problem",
+      text: "Die Lead-Ansicht bot keinen schnellen Zugriff auf Kommunikationshistorie oder nächste Schritte, was den Vertriebsprozess verlangsamte."
+    },
+    contentRight: {
+      title: "Die Lösung",
+      text: "Ein Kanban-ähnliches Board und erweiterte Detailansichten ermöglichen es nun, den Status jedes Leads sofort zu erkennen und Aktionen mit einem Klick auszuführen."
+    },
+    beforeImage: "/images/onpreo-desktop/before/lead-before.png",
+    afterImage: "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736009020acd4f0e250_MacBook%20Pro%2016_%20-%2017.png"
+  },
+  {
+    id: "tasks",
+    title: "Aufgaben-Management",
+    gridClass: "_1-0-5",
+    contentLeft: {
+      title: "Fokus auf das Wichtigste",
+      text: "Aufgaben wurden visuell komplett überarbeitet. Fälligkeitsdaten und Prioritäten sind durch intelligente Badges und Typografie-Regeln nun sofort ersichtlich, was die Tagesplanung der Makler massiv unterstützt."
+    },
+    beforeImage: "/images/onpreo-desktop/before/mailcenter-before.png",
+    afterImage: "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07363224b7933b55340d_MacBook%20Pro%2016_%20-%2027.png"
+  }
+];
 
 export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack }) {
   const project = projectData.find((p) => p.id === parseInt(projectId)) || projectData[1];
@@ -99,97 +144,33 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
 
       <div className="cs-divider"></div>
 
-      {/* Before / After Comparison 1: Dashboard */}
-      <section className="cs-section">
-        <h2 className="cs-h2">Dashboard & Übersicht</h2>
-        <div className="grid-cs _0-5-1" style={{ marginBottom: '40px' }}>
-          <div>
-            <h3 className="cs-h3">Das Problem</h3>
-            <div className="cs-body-text">
-              Das alte Dashboard war mit Datenpunkten und Tabellen überfrachtet. Wichtige KPIs gingen in der Informationsflut unter, und die Navigation war komplex und wenig intuitiv.
+      {/* Dynamic Before / After Comparisons */}
+      {comparisonsData.map((comp) => (
+        <React.Fragment key={comp.id}>
+          <section className="cs-section">
+            <h2 className="cs-h2">{comp.title}</h2>
+            <div className={`grid-cs ${comp.gridClass}`} style={{ marginBottom: '40px' }}>
+              <div>
+                <h3 className="cs-h3">{comp.contentLeft.title}</h3>
+                <div className="cs-body-text">{comp.contentLeft.text}</div>
+              </div>
+              {comp.contentRight && (
+                <div>
+                  <h3 className="cs-h3">{comp.contentRight.title}</h3>
+                  <div className="cs-body-text">{comp.contentRight.text}</div>
+                </div>
+              )}
             </div>
-          </div>
-          <div>
-             <h3 className="cs-h3">Die Lösung</h3>
-             <div className="cs-body-text">
-              Eine klare visuelle Hierarchie. Die Einführung eines modularen Widget-Systems erlaubt es den Maklern, die wichtigsten Metriken sofort zu erfassen, ohne scrollen zu müssen. Die Navigation wurde vereinfacht und strukturiert.
-             </div>
-          </div>
-        </div>
-        
-        <CompareSliderWithLabels 
-          beforeImage="/dashboard.png" 
-          afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07366f20b81700e265e6_MacBook%20Pro%2016_%20-%206.png" 
-        />
-      </section>
+            
+            <CompareSliderWithLabels 
+              beforeImage={comp.beforeImage} 
+              afterImage={comp.afterImage} 
+            />
+          </section>
 
-      <div className="cs-divider"></div>
-
-      {/* Before / After Comparison 2: Properties */}
-      <section className="cs-section">
-        <h2 className="cs-h2">Immobilien-Ansicht</h2>
-        <div className="grid-cs _1-0-5" style={{ marginBottom: '40px' }}>
-           <div>
-             <h3 className="cs-h3">Klarheit statt Chaos</h3>
-             <div className="cs-body-text">
-              Die Listenansicht der Immobilien war vorher eine endlose, unstrukturierte Tabelle (links). Durch die Neugestaltung (rechts) wurden visuelle Trenner hinzugefügt, wichtige Status-Informationen hervorgehoben und Filter leichter zugänglich gemacht.
-             </div>
-          </div>
-        </div>
-        
-        <CompareSliderWithLabels 
-          beforeImage="/property.png" 
-          afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736ee56bf7e4bb9f41a_MacBook%20Pro%2016_%20-%2041.png" 
-        />
-      </section>
-
-      <div className="cs-divider"></div>
-
-      {/* Before / After Comparison 3: Lead Management */}
-      <section className="cs-section">
-        <h2 className="cs-h2">Lead-Verwaltung</h2>
-        <div className="grid-cs _0-5-1" style={{ marginBottom: '40px' }}>
-          <div>
-            <h3 className="cs-h3">Das Problem</h3>
-            <div className="cs-body-text">
-              Die Lead-Ansicht bot keinen schnellen Zugriff auf Kommunikationshistorie oder nächste Schritte, was den Vertriebsprozess verlangsamte.
-            </div>
-          </div>
-          <div>
-             <h3 className="cs-h3">Die Lösung</h3>
-             <div className="cs-body-text">
-              Ein Kanban-ähnliches Board und erweiterte Detailansichten ermöglichen es nun, den Status jedes Leads sofort zu erkennen und Aktionen mit einem Klick auszuführen.
-             </div>
-          </div>
-        </div>
-        
-        <CompareSliderWithLabels 
-          beforeImage="/lead.png" 
-          afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736009020acd4f0e250_MacBook%20Pro%2016_%20-%2017.png" 
-        />
-      </section>
-
-      <div className="cs-divider"></div>
-
-      {/* Before / After Comparison 4: Tasks */}
-      <section className="cs-section">
-        <h2 className="cs-h2">Aufgaben-Management</h2>
-        <div className="grid-cs _1-0-5" style={{ marginBottom: '40px' }}>
-           <div>
-             <h3 className="cs-h3">Fokus auf das Wichtigste</h3>
-             <div className="cs-body-text">
-              Aufgaben wurden visuell komplett überarbeitet. Fälligkeitsdaten und Prioritäten sind durch intelligente Badges und Typografie-Regeln nun sofort ersichtlich, was die Tagesplanung der Makler massiv unterstützt.
-             </div>
-          </div>
-        </div>
-        
-        <CompareSliderWithLabels 
-          beforeImage="/mailcenter.png" 
-          afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07363224b7933b55340d_MacBook%20Pro%2016_%20-%2027.png" 
-        />
-      </section>
-
-      <div className="cs-divider"></div>
+          <div className="cs-divider"></div>
+        </React.Fragment>
+      ))}
 
       {/* Result Section */}
       <section className="cs-section">
