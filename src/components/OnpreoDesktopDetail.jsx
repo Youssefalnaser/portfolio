@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import '../styles/case-study.css';
 import { projectData } from '../data/projectsData';
 import MoreProjects from './MoreProjects';
-import ImageSlider from './ImageSlider';
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 
 export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack }) {
   const project = projectData.find((p) => p.id === parseInt(projectId)) || projectData[1];
@@ -73,12 +73,11 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden' }}>
-          <ImageSlider 
-            beforeImage="/dashboard.png"
-            afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07366f20b81700e265e6_MacBook%20Pro%2016_%20-%206.png"
-            beforeLabel="Altes Dashboard"
-            afterLabel="Neues Widget-System"
+        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px' }}>
+          <ReactCompareSlider
+            itemOne={<ReactCompareSliderImage src="/dashboard.png" alt="Altes Dashboard" />}
+            itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07366f20b81700e265e6_MacBook%20Pro%2016_%20-%206.png" alt="Neues Widget-System" />}
+            style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
           />
         </div>
       </section>
@@ -97,12 +96,11 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden' }}>
-          <ImageSlider 
-            beforeImage="/property.png"
-            afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736ee56bf7e4bb9f41a_MacBook%20Pro%2016_%20-%2041.png"
-            beforeLabel="Alte Tabelle"
-            afterLabel="Neue strukturierte Liste"
+        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px' }}>
+          <ReactCompareSlider
+            itemOne={<ReactCompareSliderImage src="/property.png" alt="Alte Tabelle" />}
+            itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736ee56bf7e4bb9f41a_MacBook%20Pro%2016_%20-%2041.png" alt="Neue strukturierte Liste" />}
+            style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
           />
         </div>
       </section>
@@ -127,12 +125,11 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden' }}>
-          <ImageSlider 
-            beforeImage="/lead.png"
-            afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736009020acd4f0e250_MacBook%20Pro%2016_%20-%2017.png"
-            beforeLabel="Alte Lead-Ansicht"
-            afterLabel="Neues Layout"
+        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px' }}>
+          <ReactCompareSlider
+            itemOne={<ReactCompareSliderImage src="/lead.png" alt="Alte Lead-Ansicht" />}
+            itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736009020acd4f0e250_MacBook%20Pro%2016_%20-%2017.png" alt="Neues Layout" />}
+            style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
           />
         </div>
       </section>
@@ -151,12 +148,11 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden' }}>
-          <ImageSlider 
-            beforeImage="/mailcenter.png"
-            afterImage="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07363224b7933b55340d_MacBook%20Pro%2016_%20-%2027.png"
-            beforeLabel="Altes Task-Board"
-            afterLabel="Neues Layout"
+        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px' }}>
+          <ReactCompareSlider
+            itemOne={<ReactCompareSliderImage src="/mailcenter.png" alt="Altes Task-Board" />}
+            itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07363224b7933b55340d_MacBook%20Pro%2016_%20-%2027.png" alt="Neues Layout" />}
+            style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
           />
         </div>
       </section>
