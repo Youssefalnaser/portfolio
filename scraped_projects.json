@@ -1,0 +1,79 @@
+[
+  {
+    "url": "https://youssefs-portfolio-00e6c7.webflow.io/template-pages/change-log",
+    "title": "Commercial Advertising &amp; Visual Design",
+    "subtitle": "High-impact digital creatives designed with a focus on visual hierarchy, precise composition, and rapid brand recognition.",
+    "client": "",
+    "date": "",
+    "category": "",
+    "overview": "",
+    "finalResult": "",
+    "thumbnails": []
+  },
+  {
+    "url": "https://youssefs-portfolio-00e6c7.webflow.io/projects/onpreo-crm-desktop-ux-ui-redesign",
+    "title": "Onpreo CRM: Desktop UX/UI Redesign",
+    "subtitle": "A strategic desktop redesign of the Onpreo CRM ecosystem. Transforming a complex, data-heavy real estate platform into an action-oriented, intuitive dashboard focused on efficiency and cognitive load reduction.",
+    "client": "onpreo AG",
+    "date": "Mar, 2026",
+    "category": "UX/UI Design, SaaS Desktop Redesign, Web Enterprise Software",
+    "overview": "Analysis and complete optimization of the Onpreo web application. By eliminating visual noise and introducing a clean, structured component architecture, the interface was re-engineered to support real estate agents in their daily high-velocity workflows.",
+    "finalResult": "From Data Clutter to Actionable UI",
+    "thumbnails": []
+  },
+  {
+    "url": "https://youssefs-portfolio-00e6c7.webflow.io/projects/onpreo-app",
+    "title": "Onpreo App",
+    "subtitle": "A mobile CRM app designed for real estate agents, from UX research to interactive prototype.",
+    "client": "onpreo AG",
+    "date": "Mar, 2026",
+    "category": "UX Design · Mobile App",
+    "overview": "A mobile-first CRM solution that transforms how real estate agents manage leads, tasks, and client communication, on the go.",
+    "finalResult": "Designing a CRM experience that fits in your pocket — without losing power or clarity.",
+    "thumbnails": []
+  },
+  {
+    "url": "https://youssefs-portfolio-00e6c7.webflow.io/projects/onpreo----marketing-design",
+    "title": "onpreo - Marketing Design",
+    "subtitle": "Marketing presentations and visual assets designed for onpreo AG — communicating AI-powered real estate tools to professionals.",
+    "client": "onpreo AG",
+    "date": "2026",
+    "category": "Marketing Design · Presentation · Branding",
+    "overview": "Designing marketing materials that explain a complex AI product — clearly, visually, and on-brand.",
+    "finalResult": "Turning a technical AI product into a visual story anyone can understand.",
+    "thumbnails": []
+  },
+  {
+    "url": "https://youssefs-portfolio-00e6c7.webflow.io/projects/sook---app-promotion-video",
+    "title": "SOOK – App-Promotion-Video",
+    "subtitle": "A motion design project combining storytelling, typography animation, and 3D mockups to bring an app to life, emotionally and visually",
+    "client": "Ostfalia Hochschule · Personal Project",
+    "date": "Summer 2025",
+    "category": "Motion Design · After Effects · Storytelling",
+    "overview": "How do you make someone feel the need for an app they&#x27;ve never heard of — in under 60 seconds?",
+    "finalResult": "From a chat message to a download, storytelling that sells without selling.",
+    "thumbnails": []
+  },
+  {
+    "url": "https://youssefs-portfolio-00e6c7.webflow.io/projects/ihop----bio-products-microwebsite",
+    "title": "IHOP",
+    "subtitle": "A responsive microwebsite connecting health-conscious users with trusted organic farms — designed from persona research to interactive Figma prototype.",
+    "client": "Ostfalia Hochschule · University Project",
+    "date": "2023",
+    "category": "Web Design · UI/UX · Figma",
+    "overview": "The organic food market lacks a trustworthy, simple platform connecting city users with local farms. IHOP bridges that gap through clear navigation, warm visuals, and a complete purchase-ready interface.",
+    "finalResult": "Figma · Adobe Illustrator",
+    "thumbnails": []
+  },
+  {
+    "url": "https://youssefs-portfolio-00e6c7.webflow.io/projects/design-typography-magazine",
+    "title": "SMooTH",
+    "subtitle": "Ostfalia Hochschule · #endpräse14",
+    "client": "Lumino Tech",
+    "date": "23 Jan, 2025",
+    "category": "Adobe InDesign · Photoshop · Illustrator",
+    "overview": "Editorial Design · Print · Typography",
+    "finalResult": "A full editorial magazine exploring how typography can be more than text — it becomes material, object, texture, and emotion.",
+    "thumbnails": []
+  }
+]

@@ -1,0 +1,316 @@
+/* ==========================================================================
+   Case Study Layout (Onpreo App / Bloom Style)
+   ========================================================================== */
+
+.cs-page-wrapper {
+  position: relative;
+  z-index: 2;
+  background-color: var(--bg-color, #030303);
+  color: var(--color-text, #ffffff);
+  padding-top: 100px;
+}
+
+.cs-section {
+  position: relative;
+  z-index: 5;
+  padding: 80px 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Typography Overrides for CS */
+.cs-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  line-height: 1.05;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 10;
+}
+
+.cs-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 60px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.cs-h3 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.cs-subline {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.65;
+  color: var(--color-text-soft, rgba(255,255,255,0.7));
+  max-width: 800px;
+  position: relative;
+  z-index: 10;
+}
+
+.cs-subline.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cs-body-text {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.85);
+  position: relative;
+  z-index: 10;
+}
+
+.cs-tiny-text {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-soft, rgba(255, 255, 255, 0.6));
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Grids */
+.grid-cs {
+  display: grid;
+  gap: 40px;
+  position: relative;
+  z-index: 10;
+}
+
+.grid-cs._1-0-5 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-cs._0-5-1 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-cs._1-1 {
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.grid-cs.grid-2x3 {
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.grid-cs.grid-3x2 {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.grid-cs.grid-5x1 {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+/* Layout Elements */
+.cs-header-img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 10;
+}
+
+.cs-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255,255,255,0.1);
+  margin: 40px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.cs-img-bg {
+  background-color: var(--bg-card, #0c0c0c);
+  border: 1px solid var(--color-border, #1a1a1a);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  position: relative;
+  z-index: 10;
+}
+
+.cs-img-bg img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  position: relative;
+  z-index: 10;
+}
+
+.cs-grid-block {
+  background-color: var(--bg-card, #0c0c0c);
+  border: 1px solid var(--color-border, #1a1a1a);
+  border-radius: 16px;
+  padding: 32px;
+  position: relative;
+  z-index: 10;
+}
+
+.cs-box-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+  background: var(--white);
+  border-radius: 50%;
+}
+
+.cs-list {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.cs-list li {
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+/* Before / After Image Slider */
+.ba-slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  cursor: ew-resize;
+  border-radius: 12px;
+  background-color: var(--black);
+  aspect-ratio: 16/10;
+  z-index: 105;
+}
+
+.ba-slider-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.ba-slider-clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ba-slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: transparent;
+  transform: translateX(-50%);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ba-slider-line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.ba-slider-button {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 10;
+  transition: transform 0.2s ease;
+}
+
+.ba-slider-container:hover .ba-slider-button {
+  transform: scale(1.1);
+}
+
+.ba-label {
+  position: absolute;
+  top: 20px;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.ba-label-before {
+  left: 20px;
+}
+
+.ba-label-after {
+  right: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+  .grid-cs._1-0-5, 
+  .grid-cs._0-5-1, 
+  .grid-cs._1-1, 
+  .grid-cs.grid-2x3, 
+  .grid-cs.grid-3x2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-cs.grid-5x1 {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .cs-header-img {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .grid-cs.grid-5x1 {
+    grid-template-columns: 1fr;
+  }
+}

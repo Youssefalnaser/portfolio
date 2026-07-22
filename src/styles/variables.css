@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Colors */
+  --bg-color: #030303;
+  --bg-card: #0c0c0c;
+  --bg-card-hover: #121212;
+  --color-text: #ffffff;
+  --color-text-soft: #9a9a9a;
+  --color-text-muted: #555555;
+  --color-border: #1a1a1a;
+  --color-border-hover: #333333;
+  
+  --accent-color: #f25b24; /* Vibrant Webflow Orange */
+  --accent-color-rgb: 242, 91, 36;
+  --accent-glow: rgba(242, 91, 36, 0.15);
+  
+  /* Fonts */
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 48px;
+  --spacing-xl: 96px;
+  --spacing-xxl: 160px;
+  
+  /* Layout */
+  --container-max-width: 1280px;
+  --header-height: 90px;
+  
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
