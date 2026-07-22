@@ -73,7 +73,9 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px' }}>
+        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px', position: 'relative' }}>
+          <div className="ba-label ba-label-before" style={{ opacity: 1, zIndex: 10 }}>Vorher</div>
+          <div className="ba-label ba-label-after" style={{ opacity: 1, zIndex: 10 }}>Nachher</div>
           <ReactCompareSlider
             itemOne={<ReactCompareSliderImage src="/dashboard.png" alt="Altes Dashboard" />}
             itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07366f20b81700e265e6_MacBook%20Pro%2016_%20-%206.png" alt="Neues Widget-System" />}
@@ -96,7 +98,9 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px' }}>
+        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px', position: 'relative' }}>
+          <div className="ba-label ba-label-before" style={{ opacity: 1, zIndex: 10 }}>Vorher</div>
+          <div className="ba-label ba-label-after" style={{ opacity: 1, zIndex: 10 }}>Nachher</div>
           <ReactCompareSlider
             itemOne={<ReactCompareSliderImage src="/property.png" alt="Alte Tabelle" />}
             itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736ee56bf7e4bb9f41a_MacBook%20Pro%2016_%20-%2041.png" alt="Neue strukturierte Liste" />}
@@ -125,7 +129,9 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px' }}>
+        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px', position: 'relative' }}>
+          <div className="ba-label ba-label-before" style={{ opacity: 1, zIndex: 10 }}>Vorher</div>
+          <div className="ba-label ba-label-after" style={{ opacity: 1, zIndex: 10 }}>Nachher</div>
           <ReactCompareSlider
             itemOne={<ReactCompareSliderImage src="/lead.png" alt="Alte Lead-Ansicht" />}
             itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736009020acd4f0e250_MacBook%20Pro%2016_%20-%2017.png" alt="Neues Layout" />}
@@ -148,7 +154,9 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
           </div>
         </div>
         
-        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px' }}>
+        <div className="cs-img-bg" style={{ padding: '0', overflow: 'hidden', borderRadius: '12px', position: 'relative' }}>
+          <div className="ba-label ba-label-before" style={{ opacity: 1, zIndex: 10 }}>Vorher</div>
+          <div className="ba-label ba-label-after" style={{ opacity: 1, zIndex: 10 }}>Nachher</div>
           <ReactCompareSlider
             itemOne={<ReactCompareSliderImage src="/mailcenter.png" alt="Altes Task-Board" />}
             itemTwo={<ReactCompareSliderImage src="https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07363224b7933b55340d_MacBook%20Pro%2016_%20-%2027.png" alt="Neues Layout" />}
