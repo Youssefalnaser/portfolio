@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import '../styles/case-study.css';
 import { projectData } from '../data/projectsData';
 import MoreProjects from './MoreProjects';
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 
-const CompareSliderWithLabels = ({ beforeImage, afterImage, beforeLabel = "Vorher", afterLabel = "Nachher" }) => {
+const CompareSliderWithLabels = ({ beforeImage, afterImage, beforeLabel = "Before", afterLabel = "After" }) => {
   const [isInteracting, setIsInteracting] = useState(false);
 
   return (
@@ -44,49 +44,49 @@ const comparisonsData = [
     title: "Dashboard & Overview",
     gridClass: "_0-5-1",
     contentLeft: {
-      title: "Das Problem",
-      text: "Das alte Dashboard war mit Datenpunkten und Tabellen überfrachtet. Wichtige KPIs gingen in der Informationsflut unter, und die Navigation war komplex und wenig intuitiv."
+      title: "The Problem",
+      text: "The old dashboard was overloaded with data points and tables. Important KPIs were lost in the flood of information, and the navigation was complex and unintuitive."
     },
     contentRight: {
       title: "The Solution",
-      text: "Eine klare visuelle Hierarchie. Die Einführung eines modularen Widget-Systems erlaubt es den Maklern, die wichtigsten Metriken sofort zu erfassen, ohne scrollen zu müssen. Die Navigation wurde vereinfacht und strukturiert."
+      text: "A clear visual hierarchy. The introduction of a modular widget system allows agents to immediately grasp the most important metrics without having to scroll. The navigation was simplified and structured."
     },
     beforeImage: "./images/onpreo-desktop/before/dashboard-before.png",
     afterImage: "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07366f20b81700e265e6_MacBook%20Pro%2016_%20-%206.png"
   },
   {
     id: "properties",
-    title: "Immobilien-Ansicht",
+    title: "Property View",
     gridClass: "_1-0-5",
     contentLeft: {
-      title: "Klarheit statt Chaos",
-      text: "Die Listenansicht der Immobilien war vorher eine endlose, unstrukturierte Tabelle (links). Durch die Neugestaltung (rechts) wurden visuelle Trenner hinzugefügt, wichtige Status-Informationen hervorgehoben und Filter leichter zugänglich gemacht."
+      title: "Clarity instead of Chaos",
+      text: "The property list view was previously an endless, unstructured table (left). The redesign (right) added visual separators, highlighted important status information, and made filters more accessible."
     },
     beforeImage: "./images/onpreo-desktop/before/property-before.png",
     afterImage: "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736ee56bf7e4bb9f41a_MacBook%20Pro%2016_%20-%2041.png"
   },
   {
     id: "leads",
-    title: "Lead-Verwaltung",
+    title: "Lead Management",
     gridClass: "_0-5-1",
     contentLeft: {
-      title: "Das Problem",
-      text: "Die Lead-Ansicht bot keinen schnellen Zugriff auf Kommunikationshistorie oder nächste Schritte, was den Vertriebsprozess verlangsamte."
+      title: "The Problem",
+      text: "The lead view offered no quick access to communication history or next steps, which slowed down the sales process."
     },
     contentRight: {
       title: "The Solution",
-      text: "Ein Kanban-ähnliches Board und erweiterte Detailansichten ermöglichen es nun, den Status jedes Leads sofort zu erkennen und Aktionen mit einem Klick auszuführen."
+      text: "A Kanban-like board and expanded detail views now make it possible to instantly recognize the status of each lead and execute actions with one click."
     },
     beforeImage: "./images/onpreo-desktop/before/lead-before.png",
     afterImage: "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0736009020acd4f0e250_MacBook%20Pro%2016_%20-%2017.png"
   },
   {
     id: "tasks",
-    title: "Aufgaben-Management",
+    title: "Task Management",
     gridClass: "_1-0-5",
     contentLeft: {
-      title: "Fokus auf das Wichtigste",
-      text: "Aufgaben wurden visuell komplett überarbeitet. Fälligkeitsdaten und Prioritäten sind durch intelligente Badges und Typografie-Regeln nun sofort ersichtlich, was die Tagesplanung der Makler massiv unterstützt."
+      title: "Focus auf das Wichtigste",
+      text: "Tasks were completely visually overhauled. Due dates and priorities are now immediately apparent through intelligent badges and typography rules, massively supporting the daily planning of agents."
     },
     beforeImage: "./images/onpreo-desktop/before/mailcenter-before.png",
     afterImage: "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a07363224b7933b55340d_MacBook%20Pro%2016_%20-%2027.png"
@@ -124,17 +124,17 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
               <div className="cs-body-text">
                 {project.overview}
                 <br/><br/>
-                Die Desktop-Version des Onpreo CRM war historisch gewachsen und litt unter visueller Überladung. Ziel war es, die Informationsarchitektur zu bereinigen und eine intuitive Arbeitsumgebung für Makler zu schaffen.
+                The desktop version of the Onpreo CRM had grown organically over time and suffered from visual overload. The goal was to clean up the information architecture and create an intuitive work environment for real estate agents.
               </div>
             </div>
             
             <div className="grid-cs _1-1" style={{ gap: '20px' }}>
               <div>
-                <div className="cs-tiny-text">Kunde</div>
+                <div className="cs-tiny-text">Client</div>
                 <div className="cs-body-text">onpreo AG</div>
               </div>
               <div>
-                <div className="cs-tiny-text">Rolle</div>
+                <div className="cs-tiny-text">Role</div>
                 <div className="cs-body-text">UX/UI Redesign</div>
               </div>
             </div>
@@ -176,21 +176,21 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
       <section className="cs-section">
         <h3 className="cs-h3">Conclusion: {project.finalResult}</h3>
         <div className="cs-subline" style={{ marginBottom: '40px' }}>
-          Durch das Redesign wurde die Einarbeitungszeit neuer Mitarbeiter drastisch reduziert und die Effizienz in der täglichen Arbeit gesteigert.
+          The redesign drastically reduced the onboarding time for new employees and increased efficiency in daily work.
         </div>
         
         <div className="grid-cs grid-2x3">
            <div className="cs-grid-block">
-             <div className="cs-tiny-text" style={{ color: '#fff' }}>01 / Fokus</div>
-             <div className="cs-body-text">Reduktion der visuellen Komplexität um 40%</div>
+             <div className="cs-tiny-text" style={{ color: '#fff' }}>01 / Focus</div>
+             <div className="cs-body-text">Reduction of visual complexity by 40%</div>
            </div>
            <div className="cs-grid-block">
              <div className="cs-tiny-text" style={{ color: '#fff' }}>02 / Navigation</div>
-             <div className="cs-body-text">Einführung einer flachen und intuitiven Sidebar</div>
+             <div className="cs-body-text">Introduction of a flat and intuitive sidebar</div>
            </div>
            <div className="cs-grid-block">
              <div className="cs-tiny-text" style={{ color: '#fff' }}>03 / Action</div>
-             <div className="cs-body-text">Wichtige Call-to-Actions (CTAs) sind sofort erreichbar</div>
+             <div className="cs-body-text">Important Call-to-Actions (CTAs) are immediately accessible</div>
            </div>
         </div>
       </section>
@@ -202,4 +202,5 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
     </div>
   );
 }
+
 

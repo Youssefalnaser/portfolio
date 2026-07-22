@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import '../styles/case-study.css';
 import { projectData } from '../data/projectsData';
 import MoreProjects from './MoreProjects';
@@ -29,7 +29,7 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
         
         {/* Overview Grid */}
         <div style={{ marginTop: '80px' }}>
-          <h2 className="cs-h2">Überblick</h2>
+          <h2 className="cs-h2">ÜOverview</h2>
           <div className="grid-cs _1-0-5">
             <div>
               <h3 className="cs-h3">Kurz gesagt</h3>
@@ -244,4 +244,5 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
     </div>
   );
 }
+
 
