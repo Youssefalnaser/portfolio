@@ -125,3 +125,4 @@ export default function SmoothDetail({ projectId, onSelectProject, navigateTo, g
     </article>
   );
 }
+

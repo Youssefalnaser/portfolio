@@ -189,7 +189,7 @@ export default function IhopDetail({ projectSlug, onSelectProject, navigateTo, g
         <div className="page-padding">
           <div className="container">
             <div className="cs-divider" style={{ margin: '0 0 60px 0' }}></div>
-            <h3 className="cs-h3">Fazit</h3>
+            <h3 className="cs-h3">Conclusion</h3>
             <div className="cs-subline" style={{ maxWidth: '900px' }}>
               From initial persona research to the final pixel-perfect interface, IHOP demonstrates a comprehensive user-centered design process. The result is a platform that feels natural, trustworthy, and visually engaging.
             </div>

@@ -58,15 +58,15 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
 
       {/* The Challenge */}
       <section className="cs-section">
-        <h2 className="cs-h2">Die Herausforderung</h2>
+        <h2 className="cs-h2">The Challenge</h2>
         <div className="grid-cs _0-5-1">
           <div>
-            <h3 className="cs-h3">Das Problem</h3>
+            <h3 className="cs-h3">The Problem</h3>
             <div className="cs-subline" style={{ marginBottom: '20px' }}>
               Es gibt keine zentrale, vertrauenswürdige Plattform für arabische Produkte in Deutschland.
             </div>
             <div className="cs-body-text">
-              Der arabische Produktmarkt in Deutschland ist stark fragmentiert. Ohne eine moderne digitale Lösung müssen Konsumenten oft verschiedene lokale Märkte aufsuchen, was Zeit und Vertrauen kostet.<br/><br/>
+              The Arabic product market in Germany is highly fragmented. Without a modern digital solution, consumers often have to visit various local markets, which costs time and trust.<br/><br/>
               Gleichzeitig mangelte es an schnellen Lieferoptionen (wie 30-Minuten-Delivery), was eine Lücke auf dem aktuellen Markt für diese Zielgruppe bedeutet.
             </div>
           </div>
@@ -80,9 +80,9 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
       <section className="cs-section">
         <div className="grid-cs _1-1">
           <div>
-            <h3 className="cs-h3">Mein Vorgehen</h3>
+            <h3 className="cs-h3">My Approach</h3>
             <div className="cs-body-text">
-              Um ein tiefes Verständnis für die Nutzer der App zu gewinnen, habe ich zunächst umfassende Recherchen durchgeführt. Auf Basis der Ergebnisse habe ich Personas erstellt und diese durch Problem-Statements und Empathy Maps ergänzt, um die Bedürfnisse und Herausforderungen der Nutzer klar abzubilden.
+              To gain a deep understanding of the app users, I first conducted comprehensive research. Based on the findings, I created personas and supplemented them with problem statements and empathy maps to clearly map out user needs and challenges.
             </div>
           </div>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent', borderRadius: '24px', overflow: 'hidden', width: '100%' }}>
@@ -106,7 +106,7 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
           <div>
             <h3 className="cs-h3">Prototyping</h3>
             <div className="cs-body-text">
-              Zunächst erstellte ich Wireframes, um erste Ideen schnell zu visualisieren. Nach mehreren Iterationen entwickelte ich Low-Fidelity-Wireframes, die ich schließlich zu einem interaktiven Prototypen ausbaute. Dieser Prototyp diente als Grundlage für anschließende Nutzertests.
+              First, I created wireframes to quickly visualize initial ideas. After several iterations, I developed low-fidelity wireframes, which I finally expanded into an interactive prototype. This prototype served as the basis for subsequent user testing.
             </div>
           </div>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent', borderRadius: '24px', overflow: 'hidden' }}>
@@ -119,9 +119,9 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
       <section className="cs-section">
         <div className="grid-cs _1-1" style={{ marginBottom: '40px' }}>
           <div>
-            <h3 className="cs-h3">Feedback aus dem Testing</h3>
+            <h3 className="cs-h3">Feedback from Testing</h3>
             <div className="cs-body-text">
-              Um die Wireframes zu testen und erstes User-Feedback zu sammeln, lud ich Tester ein. Mein Ziel bestand darin, Usability-Probleme und Verbesserungsmöglichkeiten frühzeitig zu identifizieren.
+              To test the wireframes and collect initial user feedback, I invited testers. My goal was to identify usability problems and areas for improvement early on.
             </div>
           </div>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent', borderRadius: '24px', overflow: 'hidden' }}>
@@ -132,7 +132,7 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
         <div className="grid-cs grid-2x3">
           <div className="cs-grid-block">
             <div className="cs-tiny-text" style={{ color: '#fff' }}>01 / Suche</div>
-            <div className="cs-body-text" style={{ fontWeight: 600 }}>Unübersichtliche Kategorien</div>
+            <div className="cs-body-text" style={{ fontWeight: 600 }}>Cluttered Categories</div>
             <div className="cs-body-text">Die arabischen Spezialitäten waren schwer zu filtern.</div>
           </div>
           <div className="cs-grid-block">
@@ -143,7 +143,7 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
           <div className="cs-grid-block">
             <div className="cs-tiny-text" style={{ color: '#fff' }}>03 / Vertrauen</div>
             <div className="cs-body-text" style={{ fontWeight: 600 }}>Qualitätssicherung</div>
-            <div className="cs-body-text">Es fehlte eine klare Übersicht der Halal-Zertifikate.</div>
+            <div className="cs-body-text">A clear overview of Halal certificates was missing.</div>
           </div>
           <div className="cs-grid-block">
             <div className="cs-tiny-text" style={{ color: '#fff' }}>04 / Checkout</div>
@@ -157,9 +157,9 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
       <section className="cs-section">
         <div className="grid-cs _1-1">
           <div>
-            <h3 className="cs-h3">Die Umsetzung</h3>
+            <h3 className="cs-h3">The Implementation</h3>
             <div className="cs-body-text" style={{ fontWeight: 600 }}>
-              Auf Basis des Nutzer-Feedbacks habe ich den Prototypen gezielt verbessert:
+              Based on user feedback, I specifically improved the prototype:
             </div>
             <ul className="cs-list">
               <li>Einführung einer klaren Filterung nach Herkunft und Produkttyp</li>
@@ -190,7 +190,7 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
 
       {/* Result & Outlook */}
       <section className="cs-section">
-        <h3 className="cs-h3">Ergebnis und Ausblick</h3>
+        <h3 className="cs-h3">Result and Outlook</h3>
         <div className="cs-subline" style={{ marginBottom: '40px' }}>
           Die SOOK-App legt den Grundstein für ein digitales Erlebnis, das Konsumenten und authentische arabische Produkte nahtlos verbindet.
         </div>
@@ -244,3 +244,4 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
     </div>
   );
 }
+

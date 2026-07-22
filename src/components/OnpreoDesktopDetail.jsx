@@ -41,14 +41,14 @@ const CompareSliderWithLabels = ({ beforeImage, afterImage, beforeLabel = "Vorhe
 const comparisonsData = [
   {
     id: "dashboard",
-    title: "Dashboard & Übersicht",
+    title: "Dashboard & Overview",
     gridClass: "_0-5-1",
     contentLeft: {
       title: "Das Problem",
       text: "Das alte Dashboard war mit Datenpunkten und Tabellen überfrachtet. Wichtige KPIs gingen in der Informationsflut unter, und die Navigation war komplex und wenig intuitiv."
     },
     contentRight: {
-      title: "Die Lösung",
+      title: "The Solution",
       text: "Eine klare visuelle Hierarchie. Die Einführung eines modularen Widget-Systems erlaubt es den Maklern, die wichtigsten Metriken sofort zu erfassen, ohne scrollen zu müssen. Die Navigation wurde vereinfacht und strukturiert."
     },
     beforeImage: "./images/onpreo-desktop/before/dashboard-before.png",
@@ -74,7 +74,7 @@ const comparisonsData = [
       text: "Die Lead-Ansicht bot keinen schnellen Zugriff auf Kommunikationshistorie oder nächste Schritte, was den Vertriebsprozess verlangsamte."
     },
     contentRight: {
-      title: "Die Lösung",
+      title: "The Solution",
       text: "Ein Kanban-ähnliches Board und erweiterte Detailansichten ermöglichen es nun, den Status jedes Leads sofort zu erkennen und Aktionen mit einem Klick auszuführen."
     },
     beforeImage: "./images/onpreo-desktop/before/lead-before.png",
@@ -117,10 +117,10 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
         
         {/* Overview Grid */}
         <div style={{ marginTop: '80px' }}>
-          <h2 className="cs-h2">Projektübersicht</h2>
+          <h2 className="cs-h2">Project Overview</h2>
           <div className="grid-cs _1-0-5">
             <div>
-              <h3 className="cs-h3">Zielsetzung</h3>
+              <h3 className="cs-h3">Objective</h3>
               <div className="cs-body-text">
                 {project.overview}
                 <br/><br/>
@@ -174,7 +174,7 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
 
       {/* Result Section */}
       <section className="cs-section">
-        <h3 className="cs-h3">Fazit: {project.finalResult}</h3>
+        <h3 className="cs-h3">Conclusion: {project.finalResult}</h3>
         <div className="cs-subline" style={{ marginBottom: '40px' }}>
           Durch das Redesign wurde die Einarbeitungszeit neuer Mitarbeiter drastisch reduziert und die Effizienz in der täglichen Arbeit gesteigert.
         </div>
@@ -202,3 +202,4 @@ export default function OnpreoDesktopDetail({ projectId, onSelectProject, goBack
     </div>
   );
 }
+

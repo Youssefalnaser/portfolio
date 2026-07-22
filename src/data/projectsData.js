@@ -102,7 +102,7 @@ export const projectData = [
   },
   {
     id: 6,
-    title: "Onpreo-Webseite",
+    title: "Onpreo Website",
     year: "2026",
     category: "Web Development",
     client: "onpreo AG",
@@ -113,7 +113,7 @@ export const projectData = [
   },
   {
     id: 7,
-    title: "immobilienmakler-Webseite",
+    title: "Real Estate Agent Website",
     year: "2026",
     category: "Web Development",
     client: "Ostfalia Client Project",
@@ -124,7 +124,7 @@ export const projectData = [
   },
   {
     id: 8,
-    title: "Scaleprop-Webseite",
+    title: "Scaleprop Website",
     year: "2026",
     category: "Web Development",
     client: "onpreo AG",
@@ -135,7 +135,7 @@ export const projectData = [
   },
   {
     id: 9,
-    title: "immobiliengipfel-Webseite",
+    title: "Real Estate Summit Website",
     year: "2026",
     category: "Web Development",
     client: "Real Estate Conference",
@@ -146,10 +146,10 @@ export const projectData = [
   },
   {
     id: 10,
-    title: "SOOK – App-Promotion-Video",
+    title: "SOOK – App Promotion Video",
     year: "2025",
     category: "Motion Design · After Effects · Storytelling",
-    client: "Ostfalia Hochschule · Personal Project",
+    client: "Ostfalia University · Personal Project",
     date: "Summer 2025",
     image: "./images/sook-video-thumb.png",
     videoUrl: "https://www.youtube.com/embed/79uQACTnqhY",
@@ -168,7 +168,7 @@ export const projectData = [
     title: "IHOP",
     year: "2023",
     category: "Web Design · UI/UX · Figma",
-    client: "Ostfalia Hochschule · University Project",
+    client: "Ostfalia University · University Project",
     date: "2023",
     image: "https://cdn.prod.website-files.com/69e16e613fdbf624251e818c/6a597e563492c16cc87348c4_Screenshot%202026-07-17%20025853.png",
     subtitle: "A responsive microwebsite connecting health-conscious users with trusted organic farms — designed from persona research to interactive Figma prototype.",
@@ -186,7 +186,7 @@ export const projectData = [
     client: "Lumino Tech",
     date: "23 Jan, 2025",
     image: "https://cdn.prod.website-files.com/69e16e613fdbf624251e818c/69eea1815d3abcf0eb5e340b_489.jpg",
-    subtitle: "Ostfalia Hochschule · #endpräse14",
+    subtitle: "Ostfalia University · Final Presentation 14",
     overview: "Editorial Design · Print · Typography",
     finalResult: "A full editorial magazine exploring how typography can be more than text — it becomes material, object, texture, and emotion.",
     thumbnails: [

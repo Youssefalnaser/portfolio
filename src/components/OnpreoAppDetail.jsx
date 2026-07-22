@@ -58,16 +58,16 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
 
       {/* The Challenge */}
       <section className="cs-section">
-        <h2 className="cs-h2">Die Herausforderung</h2>
+        <h2 className="cs-h2">The Challenge</h2>
         <div className="grid-cs _0-5-1">
           <div>
-            <h3 className="cs-h3">Das Problem</h3>
+            <h3 className="cs-h3">The Problem</h3>
             <div className="cs-subline" style={{ marginBottom: '20px' }}>
-              Makler verbringen 70% ihrer Zeit außerhalb des Büros ohne optimalen Zugriff auf Kundendaten.
+              Real estate agents spend 70% of their time outside the office without optimal access to customer data.
             </div>
             <div className="cs-body-text">
-              Bislang bot Onpreo keine mobile Lösung für Makler an. Das führte zu eingeschränktem Komfort und begrenzter Flexibilität für die Agenten im Außendienst.<br/><br/>
-              Ohne eine mobile CRM-App liefen Makler Gefahr, wichtige Informationen zu vergessen, Lead-Updates zu verpassen und Termine nicht optimal zu koordinieren.
+              Previously, Onpreo offered no mobile solution for real estate agents. This led to restricted comfort and limited flexibility for agents in the field.<br/><br/>
+              Without a mobile CRM app, agents ran the risk of forgetting important information, missing lead updates, and sub-optimally coordinating appointments.
             </div>
           </div>
         </div>
@@ -80,9 +80,9 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
       <section className="cs-section">
         <div className="grid-cs _1-1">
           <div>
-            <h3 className="cs-h3">Mein Vorgehen</h3>
+            <h3 className="cs-h3">My Approach</h3>
             <div className="cs-body-text">
-              Um ein tiefes Verständnis für die Nutzer der App zu gewinnen, habe ich zunächst umfassende Recherchen durchgeführt. Auf Basis der Ergebnisse habe ich Personas erstellt und diese durch Problem-Statements und Empathy Maps ergänzt, um die Bedürfnisse und Herausforderungen der Nutzer klar abzubilden.
+              To gain a deep understanding of the app users, I first conducted comprehensive research. Based on the findings, I created personas and supplemented them with problem statements and empathy maps to clearly map out user needs and challenges.
             </div>
           </div>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent', borderRadius: '24px', overflow: 'hidden', width: '100%' }}>
@@ -106,7 +106,7 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
           <div>
             <h3 className="cs-h3">Prototyping</h3>
             <div className="cs-body-text">
-              Zunächst erstellte ich Wireframes, um erste Ideen schnell zu visualisieren. Nach mehreren Iterationen entwickelte ich Low-Fidelity-Wireframes, die ich schließlich zu einem interaktiven Prototypen ausbaute. Dieser Prototyp diente als Grundlage für anschließende Nutzertests.
+              First, I created wireframes to quickly visualize initial ideas. After several iterations, I developed low-fidelity wireframes, which I finally expanded into an interactive prototype. This prototype served as the basis for subsequent user testing.
             </div>
           </div>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent' }}>
@@ -119,9 +119,9 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
       <section className="cs-section">
         <div className="grid-cs _1-1" style={{ marginBottom: '40px' }}>
           <div>
-            <h3 className="cs-h3">Feedback aus dem Testing</h3>
+            <h3 className="cs-h3">Feedback from Testing</h3>
             <div className="cs-body-text">
-              Um die Wireframes zu testen und erstes User-Feedback zu sammeln, lud ich Tester ein. Mein Ziel bestand darin, Usability-Probleme und Verbesserungsmöglichkeiten frühzeitig zu identifizieren.
+              To test the wireframes and collect initial user feedback, I invited testers. My goal was to identify usability problems and areas for improvement early on.
             </div>
           </div>
           <div className="cs-img-bg" style={{ marginTop: 0, padding: 0, background: 'transparent' }}>
@@ -132,23 +132,23 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
         <div className="grid-cs grid-2x3">
           <div className="cs-grid-block">
             <div className="cs-tiny-text" style={{ color: '#fff' }}>01 / Navigation</div>
-            <div className="cs-body-text" style={{ fontWeight: 600 }}>Unübersichtliche Navigation</div>
-            <div className="cs-body-text">Die Hauptmenüpunkte waren auf mobilen Geräten schwer erreichbar.</div>
+            <div className="cs-body-text" style={{ fontWeight: 600 }}>Cluttered Navigation</div>
+            <div className="cs-body-text">The main menu items were hard to reach on mobile devices.</div>
           </div>
           <div className="cs-grid-block">
             <div className="cs-tiny-text" style={{ color: '#fff' }}>02 / Lead Management</div>
-            <div className="cs-body-text" style={{ fontWeight: 600 }}>Fehlende Schnellaktionen</div>
-            <div className="cs-body-text">Nutzer wollten Leads direkt aus der Listenansicht anrufen können.</div>
+            <div className="cs-body-text" style={{ fontWeight: 600 }}>Missing Quick Actions</div>
+            <div className="cs-body-text">Users wanted to be able to call leads directly from the list view.</div>
           </div>
           <div className="cs-grid-block">
-            <div className="cs-tiny-text" style={{ color: '#fff' }}>03 / Terminplanung</div>
-            <div className="cs-body-text" style={{ fontWeight: 600 }}>Kalender-Integration</div>
-            <div className="cs-body-text">Es fehlte eine klare Übersicht der heutigen Termine auf dem Dashboard.</div>
+            <div className="cs-tiny-text" style={{ color: '#fff' }}>03 / Scheduling</div>
+            <div className="cs-body-text" style={{ fontWeight: 600 }}>Calendar Integration</div>
+            <div className="cs-body-text">A clear overview of todays appointments was missing from the dashboard.</div>
           </div>
           <div className="cs-grid-block">
-            <div className="cs-tiny-text" style={{ color: '#fff' }}>04 / Bestätigung</div>
+            <div className="cs-tiny-text" style={{ color: '#fff' }}>04 / Confirmation</div>
             <div className="cs-body-text" style={{ fontWeight: 600 }}>Feedback nach Aktion</div>
-            <div className="cs-body-text">Nutzer waren unsicher, ob eine Vertragsänderung erfolgreich gespeichert wurde.</div>
+            <div className="cs-body-text">Users were unsure if a contract change had been successfully saved.</div>
           </div>
         </div>
       </section>
@@ -157,20 +157,20 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
       <section className="cs-section">
         <div className="grid-cs _1-1">
           <div>
-            <h3 className="cs-h3">Die Umsetzung</h3>
+            <h3 className="cs-h3">The Implementation</h3>
             <div className="cs-body-text" style={{ fontWeight: 600 }}>
-              Auf Basis des Nutzer-Feedbacks habe ich den Prototypen gezielt verbessert:
+              Based on user feedback, I specifically improved the prototype:
             </div>
             <ul className="cs-list">
-              <li>Einführung einer Bottom-Navigation für schnellen Zugriff</li>
-              <li>Swipe-Gesten für Schnellaktionen bei Leads hinzugefügt</li>
-              <li>Dashboard-Widget für die tagesaktuellen Termine</li>
-              <li>Deutliche Toast-Benachrichtigungen nach Speicheraktionen</li>
+              <li>Introduction of bottom navigation for quick access</li>
+              <li>Added swipe gestures for quick actions on leads</li>
+              <li>Dashboard widget for daily appointments</li>
+              <li>Clear toast notifications after save actions</li>
             </ul>
           </div>
           <div>
             <div className="cs-body-text">
-              Die Änderungen wurden direkt im High-Fidelity-Prototypen umgesetzt. Dabei habe ich besonderes Augenmerk auf eine konsistente und visuell ansprechende Gestaltung gelegt, die zur CI von Onpreo passt.
+              The changes were implemented directly in the high-fidelity prototype. I paid special attention to a consistent and visually appealing design that matches Onpreo CI.
             </div>
           </div>
         </div>
@@ -190,13 +190,13 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
 
       {/* Result & Outlook */}
       <section className="cs-section">
-        <h3 className="cs-h3">Ergebnis und Ausblick</h3>
+        <h3 className="cs-h3">Result and Outlook</h3>
         <div className="cs-subline" style={{ marginBottom: '40px' }}>
-          Die Onpreo-App legt den Grundstein für ein digitales Erlebnis, das den mobilen Alltag der Makler drastisch vereinfacht.
+          The Onpreo app lays the foundation for a digital experience that drastically simplifies the mobile everyday life of real estate agents.
         </div>
         <div className="grid-cs grid-2x3">
           <div className="cs-grid-block">
-             <div className="cs-body-text">Erweiterung der Anwendung um zusätzliche Analytics-Funktionen.</div>
+             <div className="cs-body-text">Expansion of the application to include additional analytics features.</div>
           </div>
           <div className="cs-grid-block">
              <div className="cs-body-text">Entwicklung eines Dark-Modes für bessere Lesbarkeit unterwegs.</div>
@@ -247,3 +247,4 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
     </div>
   );
 }
+
