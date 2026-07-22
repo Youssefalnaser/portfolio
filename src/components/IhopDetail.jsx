@@ -142,7 +142,7 @@ export default function IhopDetail({ projectSlug, onSelectProject, navigateTo, g
               </div>
             </div>
 
-            <div className="grid-cs _1-1-1" style={{ gap: '30px' }}>
+            <div className="grid-cs grid-3x2">
               <div className="project-image-wrap" style={{ margin: 0 }}>
                 <img src="./images/ihop/ihop-ui-katalog.png" alt="IHOP UI Katalog" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }} />
               </div>
