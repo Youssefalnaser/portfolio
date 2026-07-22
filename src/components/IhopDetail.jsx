@@ -64,7 +64,7 @@ export default function IhopDetail({ projectSlug, onSelectProject, navigateTo, g
       </section>
 
       {/* 2. User Research & Persona */}
-      <section className="margin-top" style={{ padding: '80px 0', backgroundColor: '#faf9f6' }}>
+      <section className="margin-top" style={{ padding: '80px 0' }}>
         <div className="page-padding">
           <div className="container">
             <div className="top-bar">
@@ -80,14 +80,14 @@ export default function IhopDetail({ projectSlug, onSelectProject, navigateTo, g
             </div>
 
             <div className="grid-cs _1-1" style={{ gap: '40px' }}>
-              <div className="project-image-wrap" style={{ margin: 0, height: '100%', background: '#fff' }}>
+              <div className="project-image-wrap" style={{ margin: 0, height: '100%' }}>
                 <img 
                   src="./images/ihop/ihop-persona-visual.png" 
                   alt="Persona Profile" 
                   style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '12px', border: '1px solid #eee' }} 
                 />
               </div>
-              <div className="project-image-wrap" style={{ margin: 0, height: '100%', background: '#fff' }}>
+              <div className="project-image-wrap" style={{ margin: 0, height: '100%' }}>
                 <img 
                   src="./images/ihop/ihop-persona-text.png" 
                   alt="Persona Goals and Challenges" 
@@ -115,7 +115,7 @@ export default function IhopDetail({ projectSlug, onSelectProject, navigateTo, g
               </div>
             </div>
 
-            <div className="project-image-wrap" style={{ display: 'flex', justifyContent: 'center', background: '#f5f5f5', padding: '40px', borderRadius: '16px' }}>
+            <div className="project-image-wrap" style={{ display: 'flex', justifyContent: 'center', padding: '40px', borderRadius: '16px' }}>
               <img 
                 src="./images/ihop/ihop-wireframe.png" 
                 alt="IHOP Wireframes" 
@@ -127,7 +127,7 @@ export default function IhopDetail({ projectSlug, onSelectProject, navigateTo, g
       </section>
 
       {/* 4. High-Fidelity UI Design */}
-      <section className="margin-top" style={{ padding: '80px 0', backgroundColor: '#faf9f6' }}>
+      <section className="margin-top" style={{ padding: '80px 0' }}>
         <div className="page-padding">
           <div className="container">
             <div className="top-bar">
