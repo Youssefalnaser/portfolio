@@ -29,24 +29,24 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
         
         {/* Overview Grid */}
         <div style={{ marginTop: '80px' }}>
-          <h2 className="cs-h2">ÜOverview</h2>
+          <h2 className="cs-h2">Overview</h2>
           <div className="grid-cs _1-0-5">
             <div>
-              <h3 className="cs-h3">Kurz gesagt</h3>
+              <h3 className="cs-h3">In short</h3>
               <div className="cs-body-text">
                 {project.overview}
                 <br/><br/>
-                Der Fokus lag auf einer intuitiven Nutzerführung, die den Kauf von authentischen arabischen Produkten vereinfacht und beschleunigt.
+                The focus was on an intuitive user flow that simplifies and speeds up the purchase of authentic Arabic products.
               </div>
             </div>
             
             <div className="grid-cs _1-1" style={{ gap: '20px' }}>
               <div>
-                <div className="cs-tiny-text">Meine Rolle</div>
-                <div className="cs-body-text">Konzeption<br/>UX-/UI-Design & Prototyping<br/>Grafiken & Animationen</div>
+                <div className="cs-tiny-text">My Role</div>
+                <div className="cs-body-text">Concept<br/>UX/UI Design & Prototyping<br/>Graphics & Animations</div>
               </div>
               <div>
-                <div className="cs-tiny-text">Zeitraum</div>
+                <div className="cs-tiny-text">Timeframe</div>
                 <div className="cs-body-text">{project.date}</div>
               </div>
             </div>
@@ -63,11 +63,11 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
           <div>
             <h3 className="cs-h3">The Problem</h3>
             <div className="cs-subline" style={{ marginBottom: '20px' }}>
-              Es gibt keine zentrale, vertrauenswürdige Plattform für arabische Produkte in Deutschland.
+              There is no central, trustworthy platform for Arabic products in Germany.
             </div>
             <div className="cs-body-text">
               The Arabic product market in Germany is highly fragmented. Without a modern digital solution, consumers often have to visit various local markets, which costs time and trust.<br/><br/>
-              Gleichzeitig mangelte es an schnellen Lieferoptionen (wie 30-Minuten-Delivery), was eine Lücke auf dem aktuellen Markt für diese Zielgruppe bedeutet.
+              At the same time, there was a lack of fast delivery options (like 30-minute delivery), leaving a gap in the current market for this target group.
             </div>
           </div>
         </div>
@@ -131,24 +131,24 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
 
         <div className="grid-cs grid-2x3">
           <div className="cs-grid-block">
-            <div className="cs-tiny-text" style={{ color: '#fff' }}>01 / Suche</div>
+            <div className="cs-tiny-text" style={{ color: '#fff' }}>01 / SEARCH</div>
             <div className="cs-body-text" style={{ fontWeight: 600 }}>Cluttered Categories</div>
-            <div className="cs-body-text">Die arabischen Spezialitäten waren schwer zu filtern.</div>
+            <div className="cs-body-text">The Arabic specialties were hard to filter.</div>
           </div>
           <div className="cs-grid-block">
-            <div className="cs-tiny-text" style={{ color: '#fff' }}>02 / Warenkorb</div>
-            <div className="cs-body-text" style={{ fontWeight: 600 }}>Fehlende Schnellaktionen</div>
-            <div className="cs-body-text">Nutzer wollten Produkte direkt aus der Listenansicht hinzufügen.</div>
+            <div className="cs-tiny-text" style={{ color: '#fff' }}>02 / CART</div>
+            <div className="cs-body-text" style={{ fontWeight: 600 }}>Missing Quick Actions</div>
+            <div className="cs-body-text">Users wanted to add products directly from the list view.</div>
           </div>
           <div className="cs-grid-block">
-            <div className="cs-tiny-text" style={{ color: '#fff' }}>03 / Vertrauen</div>
-            <div className="cs-body-text" style={{ fontWeight: 600 }}>Qualitätssicherung</div>
+            <div className="cs-tiny-text" style={{ color: '#fff' }}>03 / TRUST</div>
+            <div className="cs-body-text" style={{ fontWeight: 600 }}>Quality Assurance</div>
             <div className="cs-body-text">A clear overview of Halal certificates was missing.</div>
           </div>
           <div className="cs-grid-block">
-            <div className="cs-tiny-text" style={{ color: '#fff' }}>04 / Checkout</div>
-            <div className="cs-body-text" style={{ fontWeight: 600 }}>Feedback nach Aktion</div>
-            <div className="cs-body-text">Nutzer waren unsicher über die exakte Lieferzeit.</div>
+            <div className="cs-tiny-text" style={{ color: '#fff' }}>04 / CHECKOUT</div>
+            <div className="cs-body-text" style={{ fontWeight: 600 }}>Feedback after Action</div>
+            <div className="cs-body-text">Users were unsure about the exact delivery time.</div>
           </div>
         </div>
       </section>
@@ -162,15 +162,15 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
               Based on user feedback, I specifically improved the prototype:
             </div>
             <ul className="cs-list">
-              <li>Einführung einer klaren Filterung nach Herkunft und Produkttyp</li>
-              <li>"Quick Add" Buttons für häufig gekaufte Produkte hinzugefügt</li>
-              <li>Deutliche Icons für Zertifikate (wie Halal, Vegan)</li>
-              <li>Live-Tracking Map für die 30-Minuten-Lieferung</li>
+              <li>Introduced clear filtering by origin and product type</li>
+              <li>Added "Quick Add" buttons for frequently purchased products</li>
+              <li>Clear icons for certificates (like Halal, Vegan)</li>
+              <li>Live tracking map for the 30-minute delivery</li>
             </ul>
           </div>
           <div>
             <div className="cs-body-text">
-              Die Änderungen wurden direkt im High-Fidelity-Prototypen umgesetzt. Dabei habe ich besonderes Augenmerk auf eine konsistente und visuell ansprechende Gestaltung gelegt, die zur Identität von SOOK passt.
+              The changes were implemented directly in the high-fidelity prototype. I paid special attention to a consistent and visually appealing design that matches SOOK's identity.
             </div>
           </div>
         </div>
@@ -192,20 +192,20 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
       <section className="cs-section">
         <h3 className="cs-h3">Result and Outlook</h3>
         <div className="cs-subline" style={{ marginBottom: '40px' }}>
-          Die SOOK-App legt den Grundstein für ein digitales Erlebnis, das Konsumenten und authentische arabische Produkte nahtlos verbindet.
+          The SOOK app lays the foundation for a digital experience that seamlessly connects consumers with authentic Arabic products.
         </div>
         <div className="grid-cs grid-2x3">
           <div className="cs-grid-block">
-             <div className="cs-body-text">Erweiterung der Anwendung um zusätzliche Rezepte und Bundle-Käufe.</div>
+             <div className="cs-body-text">Expanding the app with additional recipes and bundle purchases.</div>
           </div>
           <div className="cs-grid-block">
-             <div className="cs-body-text">Aufbau eines Loyalty-Programms.</div>
+             <div className="cs-body-text">Building a loyalty program.</div>
           </div>
           <div className="cs-grid-block">
-             <div className="cs-body-text">Integration von mehr lokalen Supermärkten in weiteren Städten.</div>
+             <div className="cs-body-text">Integrating more local supermarkets in additional cities.</div>
           </div>
           <div className="cs-grid-block">
-             <div className="cs-body-text">Zweite Usability-Study durchführen, um weiteres Feedback aus dem Feld zu sammeln.</div>
+             <div className="cs-body-text">Conduct a second usability study to gather further feedback from the field.</div>
           </div>
         </div>
       </section>
@@ -214,7 +214,7 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
       <section className="cs-section">
         <h3 className="cs-h3">Final Screens</h3>
         <div className="cs-subline" style={{ marginBottom: '40px' }}>
-          Die App wirkt leicht und einladend und unterstreicht gleichzeitig den authentischen Charakter von SOOK.
+          The app feels light and inviting while emphasizing SOOK's authentic character.
         </div>
         <div className="grid-cs" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px' }}>
           {/* Row 1: Screens 1 to 4 (Onboarding & Auth) */}
@@ -244,5 +244,6 @@ export default function SookAppDetail({ projectId, onSelectProject }) {
     </div>
   );
 }
+
 
 

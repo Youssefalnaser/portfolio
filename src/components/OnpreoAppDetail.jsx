@@ -29,24 +29,24 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
         
         {/* Overview Grid */}
         <div style={{ marginTop: '80px' }}>
-          <h2 className="cs-h2">ÜOverview</h2>
+          <h2 className="cs-h2">Overview</h2>
           <div className="grid-cs _1-0-5">
             <div>
-              <h3 className="cs-h3">Kurz gesagt</h3>
+              <h3 className="cs-h3">In short</h3>
               <div className="cs-body-text">
                 {project.overview}
                 <br/><br/>
-                Der Fokus lag auf einer intuitiven Nutzerführung, die Produktivität fördert und gleichzeitig eine reibungslose Verwaltung von Immobilien und Leads ermöglicht.
+                The focus was on an intuitive user flow that promotes productivity while simultaneously enabling smooth management of properties and leads.
               </div>
             </div>
             
             <div className="grid-cs _1-1" style={{ gap: '20px' }}>
               <div>
-                <div className="cs-tiny-text">Meine Rolle</div>
-                <div className="cs-body-text">Konzeption<br/>UX-/UI-Design & Prototyping<br/>Grafiken & Animationen</div>
+                <div className="cs-tiny-text">My Role</div>
+                <div className="cs-body-text">Concept<br/>UX/UI Design & Prototyping<br/>Graphics & Animations</div>
               </div>
               <div>
-                <div className="cs-tiny-text">Zeitraum</div>
+                <div className="cs-tiny-text">Timeframe</div>
                 <div className="cs-body-text">{project.date}</div>
               </div>
             </div>
@@ -199,13 +199,13 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
              <div className="cs-body-text">Expansion of the application to include additional analytics features.</div>
           </div>
           <div className="cs-grid-block">
-             <div className="cs-body-text">Entwicklung eines Dark-Modes für bessere Lesbarkeit unterwegs.</div>
+             <div className="cs-body-text">Development of a dark mode for better readability on the go.</div>
           </div>
           <div className="cs-grid-block">
-             <div className="cs-body-text">Live-Integration von Google Maps für schnelle Routenplanung zu Objekten.</div>
+             <div className="cs-body-text">Live integration of Google Maps for fast route planning to properties.</div>
           </div>
           <div className="cs-grid-block">
-             <div className="cs-body-text">Zweite Usability-Study durchführen, um weiteres Feedback aus dem Feld zu sammeln.</div>
+             <div className="cs-body-text">Conduct a second usability study to gather further feedback from the field.</div>
           </div>
         </div>
       </section>
@@ -214,7 +214,7 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
       <section className="cs-section">
         <h3 className="cs-h3">Final Screens</h3>
         <div className="cs-subline" style={{ marginBottom: '40px' }}>
-          Die App wirkt leicht und einladend und unterstreicht gleichzeitig den professionellen Charakter von Onpreo.
+          The app feels light and inviting while emphasizing the professional character of Onpreo.
         </div>
         <div className="grid-cs grid-5x1" style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '20px' }}>
           {/* Row 1: Screens 1 to 5 */}
@@ -247,5 +247,6 @@ export default function OnpreoAppDetail({ projectId, onSelectProject }) {
     </div>
   );
 }
+
 
 
