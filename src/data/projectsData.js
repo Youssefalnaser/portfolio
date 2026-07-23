@@ -12,9 +12,14 @@ export const projectData = [
     finalResult: "Crafting visual hooks that drive immediate brand recognition.",
     finalResultDesc: "Through dynamic compositing, strategic color contrast, and a clear visual hierarchy, these promotional designs are built to cut through digital noise. By minimizing visual clutter, the final result is a versatile collection of high-impact marketing assets that instantly guide the user's eye to the core product and communicate the brand's message effortlessly.",
     thumbnails: [
-      "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a33fa394a9b305a75bb1aa2_HEINZ.jpg",
-      "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a33fa38a58c2b44b15585cd_Untitled-2.jpg",
-      "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a33fa38e5c9b0acfc01044d_Untitled-1.jpg",
+      {
+        type: 'bento-left-tall',
+        images: [
+          "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a33fa394a9b305a75bb1aa2_HEINZ.jpg",
+          "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a33fa38a58c2b44b15585cd_Untitled-2.jpg",
+          "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a33fa38e5c9b0acfc01044d_Untitled-1.jpg"
+        ]
+      },
       [
         "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a59852985c869ebee9d822a_2.jpg",
         "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a5985298ac4ac335495b5c3_1.jpg",

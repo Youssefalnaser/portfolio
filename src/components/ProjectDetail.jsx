@@ -172,6 +172,40 @@ export default function ProjectDetail({ projectSlug, onSelectProject, navigateTo
                     );
                   }
                   
+                  if (thumbnailObj && !Array.isArray(thumbnailObj) && thumbnailObj.type === 'bento-left-tall') {
+                    return (
+                      <div key={index} className="bento-left-tall">
+                        <div className="project-thumb bento-tall">
+                          <img 
+                            src={thumbnailObj.images[0]} 
+                            loading="lazy" 
+                            alt={`${project.title} screenshot ${index + 1} - main`} 
+                            className="project-thumb-image"
+                            style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }}
+                          />
+                        </div>
+                        <div className="project-thumb">
+                          <img 
+                            src={thumbnailObj.images[1]} 
+                            loading="lazy" 
+                            alt={`${project.title} screenshot ${index + 1} - sub 1`} 
+                            className="project-thumb-image"
+                            style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }}
+                          />
+                        </div>
+                        <div className="project-thumb">
+                          <img 
+                            src={thumbnailObj.images[2]} 
+                            loading="lazy" 
+                            alt={`${project.title} screenshot ${index + 1} - sub 2`} 
+                            className="project-thumb-image"
+                            style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }}
+                          />
+                        </div>
+                      </div>
+                    );
+                  }
+                  
                   // Render as a full-width single image
                   return (
                     <div className="project-thumb" key={index} style={{ width: '100%', margin: 0, padding: 0 }}>
