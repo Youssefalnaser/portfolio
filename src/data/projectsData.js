@@ -158,9 +158,11 @@ export const projectData = [
     finalResult: "From a chat message to a download, storytelling that sells without selling.",
     finalResultDesc: "The video opens with a real conversation between two friends about finding authentic Arabic food in Germany. Within seconds, SOOK becomes the answer. Through typography animation, 3D iPhone mockups and precise cuts, the promotion balances emotional narrative with clear app functionality.",
     thumbnails: [
-      "https://cdn.prod.website-files.com/69e16e613fdbf624251e818c/6a051ff5cf515d3e3f4a3ce9_Storyboard.jpg",
-      "https://cdn.prod.website-files.com/69e16e613fdbf624251e818c/6a051fe71aa5d34ac19c1dcd_Moodboard.jpg",
-      "https://cdn.prod.website-files.com/69e16e613fdbf624251e818c/6a051fe5d271234d5e6fb5e6_Standbild.png"
+      [
+        "https://cdn.prod.website-files.com/69e16e613fdbf624251e818c/6a051ff5cf515d3e3f4a3ce9_Storyboard.jpg",
+        "https://cdn.prod.website-files.com/69e16e613fdbf624251e818c/6a051fe71aa5d34ac19c1dcd_Moodboard.jpg",
+        "https://cdn.prod.website-files.com/69e16e613fdbf624251e818c/6a051fe5d271234d5e6fb5e6_Standbild.png"
+      ]
     ]
   },
   {
