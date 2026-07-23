@@ -26,7 +26,7 @@ export default function MoreProjects({ currentProjectId, onSelectProject }) {
     <section className="more-projects-section">
       <div className="more-projects-container">
         <div className="more-projects-header">
-          <h2 className="more-projects-title">Weitere Projekte</h2>
+          <h2 className="more-projects-title">More Projects</h2>
           <div className="more-projects-badge">/ 03 Projects</div>
         </div>
 
