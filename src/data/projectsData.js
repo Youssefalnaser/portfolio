@@ -83,14 +83,18 @@ export const projectData = [
     overview: "Designing marketing materials that explain a complex AI product — clearly, visually, and on-brand.",
     finalResult: "Turning a technical AI product into a visual story anyone can understand.",
     thumbnails: [
-      "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ca26f20b81700e3ee1f_KI-slide-1.jpg",
-      "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ca947071e9bbf912756_KI-slide-2.jpg",
-      "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ca9572cd5aa00e125f0_KI-slide-3.jpg",
-      "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ca9b837094aa09b3a1f_KI-slide-4.jpg",
-      "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ffed66c6f73c56611c4_1.jpg",
-      "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ffe89c640b6f98da743_2.jpg",
-      "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ffe0b688ba26a2e7840_3.jpg",
-      "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ffe78d30abf7d59ce4e_4.jpg",
+      [
+        "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ca26f20b81700e3ee1f_KI-slide-1.jpg",
+        "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ca947071e9bbf912756_KI-slide-2.jpg",
+        "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ca9572cd5aa00e125f0_KI-slide-3.jpg",
+        "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ca9b837094aa09b3a1f_KI-slide-4.jpg"
+      ],
+      [
+        "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ffed66c6f73c56611c4_1.jpg",
+        "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ffe89c640b6f98da743_2.jpg",
+        "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ffe0b688ba26a2e7840_3.jpg",
+        "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a0ffe78d30abf7d59ce4e_4.jpg"
+      ],
       "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a115e89c640b6f98e031d_Screenshot%202026-06-11%20033357.png",
       "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a11776f44d789f56a1622_Screenshot%202026-06-11%20033441.png",
       "https://cdn.prod.website-files.com/69e16e603fdbf624251e812f/6a2a1177893f93c7f4e14377_Screenshot%202026-06-11%20033448.png",
