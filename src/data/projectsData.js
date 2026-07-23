@@ -119,7 +119,7 @@ export const projectData = [
   },
   {
     id: 7,
-    title: "Real Estate Agent Website",
+    title: "Werde Immobilienmakler",
     year: "2026",
     category: "Web Development",
     client: "Ostfalia Client Project",
@@ -141,7 +141,7 @@ export const projectData = [
   },
   {
     id: 9,
-    title: "Real Estate Summit Website",
+    title: "Immobiliengipfel",
     year: "2026",
     category: "Web Development",
     client: "Real Estate Conference",
