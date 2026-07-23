@@ -153,9 +153,10 @@ export default function ProjectDetail({ projectSlug, onSelectProject, navigateTo
               <div className="project-thumb-wrap" style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
                 {project.thumbnails.map((thumbnailObj, index) => {
                   if (Array.isArray(thumbnailObj)) {
-                    // Render as a 2-column inner grid if it's an array
+                    // Render as an inner grid if it's an array. Use smaller minmax if 4 items are present to ensure a 4-column layout
+                    const minWidth = thumbnailObj.length >= 4 ? '150px' : '300px';
                     return (
-                      <div key={index} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', margin: '20px 0' }}>
+                      <div key={index} style={{ display: 'grid', gridTemplateColumns: `repeat(auto-fit, minmax(${minWidth}, 1fr))`, gap: '20px', margin: '20px 0' }}>
                         {thumbnailObj.map((subThumb, subIndex) => (
                           <div className="project-thumb" key={subIndex}>
                             <img 
