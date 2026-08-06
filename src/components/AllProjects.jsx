@@ -74,8 +74,15 @@ export default function AllProjects({ onSelectProject }) {
                 )}
               </div>
               <div className="project-card-info">
-                <span className="project-title">{project.title}</span>
-                <span className="project-year">/ {project.year}</span>
+                <div>
+                  <span className="project-title">{project.title}</span>
+                  <span className="project-year">/ {project.year}</span>
+                </div>
+                {project.category && (
+                  <div className="project-role-tag" style={{ fontSize: '12px', color: 'var(--soft-text, #888)', marginTop: '6px', opacity: 0.8 }}>
+                    {project.category}
+                  </div>
+                )}
               </div>
             </div>
           ))}
