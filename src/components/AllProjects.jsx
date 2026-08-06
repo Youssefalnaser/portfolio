@@ -1,30 +1,58 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { projectData } from '../data/projectsData';
 import '../styles/components.css';
 
 export default function AllProjects({ onSelectProject }) {
+  const [activeFilter, setActiveFilter] = useState('All');
+
   // Scroll to top when page opens
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const filters = ['All', 'UX/UI Design', 'Web Development', 'Visual & Marketing'];
+
+  const filteredProjects = projectData.filter(project => {
+    if (activeFilter === 'All') return true;
+    
+    const cat = project.category.toLowerCase();
+    
+    if (activeFilter === 'UX/UI Design') {
+      return cat.includes('ux') || cat.includes('ui') || cat.includes('app') || cat.includes('crm') || cat.includes('enterprise');
+    }
+    if (activeFilter === 'Web Development') {
+      return cat.includes('development');
+    }
+    if (activeFilter === 'Visual & Marketing') {
+      return cat.includes('marketing') || cat.includes('advertising') || cat.includes('motion') || cat.includes('illustrator') || cat.includes('composition');
+    }
+    return true;
+  });
+
   return (
     <section className="section" style={{ paddingTop: '160px' }}>
       <div className="container">
         {/* Top Header */}
-        <div style={{ marginBottom: '60px', textAlign: 'center' }}>
+        <div style={{ marginBottom: '40px', textAlign: 'center' }}>
           <h1 className="display-01">Work</h1>
         </div>
 
-        {/* Section Top Bar */}
-        <div className="top-bar">
-          <div className="caps">/ Project</div>
-          <div className="caps">N. 01</div>
+        {/* Filter Tabs */}
+        <div className="filter-tabs-wrap" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '12px', marginBottom: '60px' }}>
+          {filters.map((filter) => (
+            <button
+              key={filter}
+              className={`filter-btn ${activeFilter === filter ? 'active' : ''}`}
+              onClick={() => setActiveFilter(filter)}
+            >
+              {filter}
+            </button>
+          ))}
         </div>
 
         {/* 12 Projects Grid Layout */}
         <div className="b-project-wrap">
-          {projectData.map((project) => (
+          {filteredProjects.map((project) => (
             <div 
               key={project.id} 
               className="project-card" 

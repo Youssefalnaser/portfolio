@@ -1361,3 +1361,31 @@
 }
 
 
+
+/* Filter Tabs */
+.filter-btn {
+  background: transparent;
+  border: 1px solid var(--border-color, rgba(255,255,255,0.1));
+  color: var(--text-color, #fff);
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.filter-btn:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: var(--primary-color, #fff);
+  color: var(--bg-color, #000);
+  border-color: var(--primary-color, #fff);
+  font-weight: 600;
+}
